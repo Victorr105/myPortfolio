@@ -1,0 +1,151 @@
+
+/* STYLES OPTION FOR THE HEADER SECTION */
+.parentForHeader {
+    display: flex;
+    width: 100vw;
+    background-color: yellow;
+}
+header {
+    width: 80%;
+    position: absolute;
+    background-color: purple;
+}
+.logoName.image h1{
+    
+}
+
+.searchBar {
+    width: 10%;
+    background-color: brown;
+    display: block;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+/* STYLES OPTION FOR THE SEARCHBAR SECTION */
+
+ 
+/* STYLES  OPTION FOR THE SLIDE {WHOLE CONTAINER }*/
+.slide{
+    width:250px;
+    box-shadow: 2px 2px 8px green;
+    background-color: white;
+    position: absolute;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+}
+
+/* STYLES OPTION FOR THE H1 {MENU SECTION} */
+.slide h1{
+    color:black;
+    padding: 2px 5px 0px 25px ;
+    pointer-events: none;
+    font-weight: 800;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+
+/* STYLES OPTION FOR THE LIST */
+.slide ul li{
+    list-style: none;
+    background-color: blue;
+    margin: 0%;
+    box-shadow: 2px 2px 4px gray;
+
+}
+
+/* STYLES OPTION FOR THE ANCHOR TAG */
+ul li a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease-out;
+    text-align: center;
+    padding: 20px 0px;
+    
+
+}
+
+/* STYLES OPTION FOR THE HOVERING EFFECT  */
+ul li a:hover{
+   background-color: black;
+   color: white;
+   transition: 1s ease;
+}
+ /* STYLES OPTION FOR THE INPUT {THE CHECKBOX VISIBILITY} */
+input{
+    display: none;
+    visibility: hidden;
+    
+}
+
+
+.toggle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    left: 15px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 0 10px gray;
+    background-color: red;
+}
+
+
+
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color:black; /* STYLES OPTION FOR THE ANIMATED X OPTION*/
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top-line{
+    top: 20%;
+    left: 20%;
+    transform: -50%,-50%;
+}
+.toggle .middle-line{
+    top: 45%;
+    left: 20%;
+    transform: -50%,-50%;
+}
+.toggle .bottom-line{
+    top:70%;
+    left: 20%;
+    transform: -50%,-50%;
+}
+
+
+input:checked ~ .toggle .top-line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+input:checked ~ .toggle .bottom-line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+input:checked ~ .toggle .middle-line{
+    opacity: 0;
+    width: 25px;
+    transform: translateX(20px);
+}
+
+input:checked ~ .slide{
+    transform: translateX(0);
+    box-shadow: 0 0 red;
+}

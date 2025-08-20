@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white ;
+}
+
+
+.navSection nav ul li {
+    cursor: pointer;
+}
+
+.navSection nav ul li a {
+    line-height: 40px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+.navSection nav ul li a:hover {
+    color:blue !important;
+    transition: 0.1s;
+}
+
+.ParentDivForNAvsection {
+        display: none;
+     }
+
+     
+
+
+
+
+
+
+
+
+
+@media  screen and (min-width:1400px ) and (max-width:1700px) {
+     
+}
+
+
+@media  screen and (max-width:1200px) {
+     
+}
+@media  screen and (max-width:1100px) {
+     
+}
+
+@media  screen and (max-width:890px) {
+    .ParentDivForNAvsection {
+    display: block;
+}
+     .navSectionLg {
+    display: none  !important;
+}
+}
+
+@media  screen and (max-width:720px) {
+    .ParentDivForNAvsection {
+        display: block;
+}
+    .navSectionLg {
+    display: none !important;
+}
+}
+
+@media  screen and (max-width:560px) {
+     .ParentDivForNAvsection {
+        display: block;
+}
+     .navSectionLg {
+    display: none !important;
+}
+}
+
+@media  screen and (max-width:480px) {
+     .ParentDivForNAvsection {
+        display: block;
+     }
+     
+     
+}
+
+@media  screen and (max-width:280px) {
+     .ParentDivForNAvsection {
+        display: block;
+     }
+     .navSectionLg {
+    display: none  !important;
+}
+
+}
+
+
