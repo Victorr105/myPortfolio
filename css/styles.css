@@ -5,18 +5,64 @@
     box-sizing: border-box;
 }
 
+
+/* styles section for the overall code  */
+
+
 body{
     background-color:white ;
+    background-image: url(../images/b3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    
 }
 
+
+
+/* code for the nav Section */
+
+.ParentDivForNAvsection {
+        display: none;
+    }
+
+ .navSectionLg {
+    display: block  !important;
+}
 
 .navSection nav ul li {
     cursor: pointer;
+    
 }
 
+.navSection {
+    width: 70%;
+}
+
+.logo {
+    width: 15%;
+}
+
+.listMirror {
+    width: fit-content;
+    height: fit-content;
+    /* css for the glass effect */
+    background: rgba(255, 255, 255, 0.1);     /* Semi-transparent */
+    backdrop-filter: blur(12px);             /* Frosted glass blur */
+    -webkit-backdrop-filter: blur(12px);     /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    border-radius: 12px;                     /* Rounded corners */
+    padding: 0px 40px;                      /* Inner spacing */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+
 .navSection nav ul li a {
-    line-height: 40px;
-    font-size: 1rem;
+    font-size:0.8rem;
     font-family: sans-serif;
 }
 .navSection nav ul li a:hover {
@@ -24,20 +70,16 @@ body{
     transition: 0.1s;
 }
 
-.ParentDivForNAvsection {
-        display: none;
-     }
+.sectionOne {
+    
 
-     
-
+}
 
 
 
 
-
-
-
-
+ 
+/* styles section for the media qurries */
 @media  screen and (min-width:1400px ) and (max-width:1700px) {
      
 }
@@ -51,19 +93,14 @@ body{
 }
 
 @media  screen and (max-width:890px) {
-    .ParentDivForNAvsection {
-    display: block;
-}
-     .navSectionLg {
-    display: none  !important;
-}
+ 
 }
 
-@media  screen and (max-width:720px) {
+@media  screen and (max-width:690px) {
     .ParentDivForNAvsection {
         display: block;
 }
-    .navSectionLg {
+     .navSectionLg {
     display: none !important;
 }
 }
@@ -81,6 +118,9 @@ body{
      .ParentDivForNAvsection {
         display: block;
      }
+     .navSectionLg {
+    display: none  !important;
+}
      
      
 }
@@ -94,5 +134,3 @@ body{
 }
 
 }
-
-

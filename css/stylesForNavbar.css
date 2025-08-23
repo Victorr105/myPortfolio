@@ -21,9 +21,7 @@ header {
 
 }
 
-img {
-    max-width: 100%;
-}
+
 
 /* STYLES OPTION FOR THE SEARCHBAR SECTION */
 
@@ -31,11 +29,11 @@ img {
 /* STYLES  OPTION FOR THE SLIDE {WHOLE CONTAINER }*/
 .slide{
     width:250px;
-    box-shadow: 2px 2px 8px green;
-    background-color: white;
+    box-shadow: 2px 2px 8px pink;
+    background-color: black;
     position: absolute;
     transition: 0.5s ease;
-    transform: translateX(-250px);
+    transform: translateX(-274px);
 }
 
 /* STYLES OPTION FOR THE H1 {MENU SECTION} */
