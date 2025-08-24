@@ -1,26 +1,15 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* STYLES OPTION FOR THE HEADER SECTION */
 .parentForHeader {
     display: flex;
     width: 100vw;
     background-color: yellow;
-}
-header {
-    width: 80%;
     position: absolute;
-    background-color: purple;
 }
-.logoName.image h1{
-    
-}
-
-.searchBar {
-    width: 10%;
-    background-color: brown;
-    display: block;
-
-}
-
 
 
 /* STYLES OPTION FOR THE SEARCHBAR SECTION */
@@ -57,7 +46,7 @@ header {
 }
 
 /* STYLES OPTION FOR THE ANCHOR TAG */
-ul li a{
+.slide ul li a{
     color: black;
     display: block;
     text-decoration: none;
@@ -70,7 +59,7 @@ ul li a{
 }
 
 /* STYLES OPTION FOR THE HOVERING EFFECT  */
-ul li a:hover{
+.slide ul li a:hover{
    background-color: black;
    color: white;
    transition: 1s ease;
@@ -124,26 +113,26 @@ input{
 }
 
 
-input:checked ~ .toggle .top-line{
+ input:checked ~ .toggle .top-line{
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(45deg);
 }
-input:checked ~ .toggle .bottom-line{
+ input:checked ~ .toggle .bottom-line{
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(-45deg);
 }
 
-input:checked ~ .toggle .middle-line{
+ input:checked ~ .toggle .middle-line{
     opacity: 0;
     width: 25px;
     transform: translateX(20px);
 }
 
-input:checked ~ .slide{
+ input:checked ~ .slide{
     transform: translateX(0);
     box-shadow: 0 0 red;
 }

@@ -8,30 +8,29 @@
 
 /* styles section for the overall code  */
 
-
 body{
-    background-color:white ;
     background-image: url(../images/b3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
-    text-align: center;
-    padding: 50px;
+    position: relative;
     
 }
 
-
-
 /* code for the nav Section */
+
+
 
 .ParentDivForNAvsection {
         display: none;
-    }
+}
 
- .navSectionLg {
-    display: block  !important;
+.navSectionLg {
+        display: none  !important;
+    }
+.navSectionLg {
+    margin-bottom: 2%;
 }
 
 .navSection nav ul li {
@@ -49,19 +48,20 @@ body{
 
 .listMirror {
     width: fit-content;
-    height: fit-content;
+    height: 51px;
     /* css for the glass effect */
     background: rgba(255, 255, 255, 0.1);     /* Semi-transparent */
     backdrop-filter: blur(12px);             /* Frosted glass blur */
     -webkit-backdrop-filter: blur(12px);     /* Safari support */
     border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
-    border-radius: 12px;                     /* Rounded corners */
+    border-radius: 10px;                     /* Rounded corners */
     padding: 0px 40px;                      /* Inner spacing */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 
 .navSection nav ul li a {
+    line-height: 50px;
     font-size:0.8rem;
     font-family: sans-serif;
 }
@@ -70,67 +70,78 @@ body{
     transition: 0.1s;
 }
 
-.sectionOne {
+/* Start of the section 1 phase */
+
+.sectionOne_content {
+    width: 100%;
+    display: grid;
+
+}
+
+
+
+
+/* styles section for the media qurries */
+@media  screen  and (min-width:0px) {
+    .ParentDivForNAvsection {
+        display: block !important;
+    }
+    .navSectionLg {
+        display: none  !important;
+    }
+    .sectionOne_content {
+        grid-auto-flow: column;
+        grid-template-columns: 1fr ;
+        width: 100%;
+    }
+
+    
+}
+@media  screen  and (min-width:576px) {
+    .ParentDivForNAvsection {
+        display: block !important;
+    }
+    .navSectionLg {
+        display: none  !important;
+    }
+    .sectionOne_content {
+        grid-auto-flow: column;
+        grid-template-columns: 1fr ;
+        width: 100%;
+    }
+
+    
+}
+
+@media  screen  and (min-width:768px) {
+    
+    .navSectionLg {
+        display: block  !important;
+    }
+
     
 
 }
 
+@media  screen  and (min-width:992px) {
+    .navSectionLg {
+        display: block !important;
+    }
+
+
+}
+
+@media  screen  and (min-width:1200px) {
+    .navSectionLg {
+        display: block !important;
+    }
+}
+
+@media  screen  and (min-width:1400px) {
+    .navSectionLg {
+        display: block !important;
+    }
+}
 
 
 
- 
-/* styles section for the media qurries */
-@media  screen and (min-width:1400px ) and (max-width:1700px) {
-     
-}
-
-
-@media  screen and (max-width:1200px) {
-     
-}
-@media  screen and (max-width:1100px) {
-     
-}
-
-@media  screen and (max-width:890px) {
- 
-}
-
-@media  screen and (max-width:690px) {
-    .ParentDivForNAvsection {
-        display: block;
-}
-     .navSectionLg {
-    display: none !important;
-}
-}
-
-@media  screen and (max-width:560px) {
-     .ParentDivForNAvsection {
-        display: block;
-}
-     .navSectionLg {
-    display: none !important;
-}
-}
-
-@media  screen and (max-width:480px) {
-     .ParentDivForNAvsection {
-        display: block;
-     }
-     .navSectionLg {
-    display: none  !important;
-}
-     
-     
-}
-
-@media  screen and (max-width:280px) {
-     .ParentDivForNAvsection {
-        display: block;
-     }
-     .navSectionLg {
-    display: none  !important;
-}
-
-}
