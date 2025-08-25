@@ -21,14 +21,6 @@ body{
 /* code for the nav Section */
 
 
-
-.ParentDivForNAvsection {
-        display: none;
-}
-
-.navSectionLg {
-        display: none  !important;
-    }
 .navSectionLg {
     margin-bottom: 2%;
 }
@@ -72,76 +64,109 @@ body{
 
 /* Start of the section 1 phase */
 
+
+.sectionOne {
+    margin-top: 5%;
+}
 .sectionOne_content {
     width: 100%;
-    display: grid;
+    display:grid;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
 
 }
+
+
+.sectionOneA {
+    width: 100%;
+}
+
+.sectionOneB {
+    width: 100%;
+}
+.navSectionLg {
+        display: none  !important;
+    }
+
 
 
 
 
 /* styles section for the media qurries */
-@media  screen  and (min-width:0px) {
-    .ParentDivForNAvsection {
-        display: block !important;
-    }
-    .navSectionLg {
-        display: none  !important;
-    }
-    .sectionOne_content {
-        grid-auto-flow: column;
-        grid-template-columns: 1fr ;
-        width: 100%;
-    }
 
-    
-}
 @media  screen  and (min-width:576px) {
     .ParentDivForNAvsection {
-        display: block !important;
+        display: none !important;
     }
-    .navSectionLg {
-        display: none  !important;
-    }
-    .sectionOne_content {
-        grid-auto-flow: column;
-        grid-template-columns: 1fr ;
-        width: 100%;
-    }
-
-    
-}
-
-@media  screen  and (min-width:768px) {
-    
     .navSectionLg {
         display: block  !important;
     }
-
-    
+    .sectionOne_content {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr ;
+    }
 
 }
 
+@media  screen  and (min-width:768px) {
+    .ParentDivForNAvsection {
+        display: none !important;
+    }
+    .navSectionLg {
+        display: block  !important;
+    }
+    .sectionOne_content {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+}
 @media  screen  and (min-width:992px) {
+    .ParentDivForNAvsection {
+        display: none !important;
+    }
     .navSectionLg {
-        display: block !important;
+        display: block  !important;
+    }
+    .sectionOne_content {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr ;
     }
 
-
 }
-
 @media  screen  and (min-width:1200px) {
-    .navSectionLg {
-        display: block !important;
+    .ParentDivForNAvsection {
+        display: none !important;
     }
-}
+    .navSectionLg {
+        display: block  !important;
+    }
+    .sectionOne_content {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr ;
+    }
 
+}
 @media  screen  and (min-width:1400px) {
-    .navSectionLg {
-        display: block !important;
+    .ParentDivForNAvsection {
+        display: none !important;
     }
-}
+    .navSectionLg {
+        display: block  !important;
+    }
+    .sectionOne_content {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr ;
+    }
 
+}
 
 
