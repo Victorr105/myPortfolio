@@ -1,28 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Englebert&family=Mea+Culpa&family=Meow+Script&family=Tangerine:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    
 }
 
 
 /* styles section for the overall code  */
 
 body{
-    background-image: url(../images/b3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+
     position: relative;
     
 }
 
-/* code for the nav Section */
+/* the styles section for the background video */
 
+.text {
+    font-family: "Meow Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.644); /* Dark overlay for readability */
+        z-index: 1;
+    }
+.background video {
+    width:100%;
+    height:100%;
+    position :absolute ;
+    top:0;
+    left:0;
+    z-index: -1000;
+}
+
+.background_video video {
+    width:100%;
+    position: fixed;
+    height:100%;
+    object-fit: cover;
+    z-index: -1000;
+}
+
+/* code for the nav Section */
+.navSectionLg {
+        display: none  !important;
+}
 
 .navSectionLg {
     margin-bottom: 2%;
+    position: absolute;
+    top: 0%;
 }
 
 .navSection nav ul li {
@@ -35,8 +71,18 @@ body{
 }
 
 .logo {
+    animation :slideLeft 1s ;
     width: 15%;
+
 }
+
+.logo2 {
+    animation :slideRight 1s ;
+    width: 15%;
+
+}
+
+
 
 .listMirror {
     width: fit-content;
@@ -58,41 +104,44 @@ body{
     font-family: sans-serif;
 }
 .navSection nav ul li a:hover {
-    color:blue !important;
+    color: #DAA520 !important;
     transition: 0.1s;
+}
+
+.blog {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    /* css for the glass effect */
+    background: rgba(255, 255, 255, 0.1);     /* Semi-transparent */
+    backdrop-filter: blur(12px);             /* Frosted glass blur */
+    -webkit-backdrop-filter: blur(12px);     /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+                        /* Rounded corners */
+                        /* Inner spacing */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.blog button:hover {
+    background-color:#DAA520 ;
 }
 
 /* Start of the section 1 phase */
 
-
 .sectionOne {
     margin-top: 5%;
+    padding: 7% 10%;
+    background-color: #ffffff0c;
+    border-radius: 10px;
 }
-.sectionOne_content {
-    width: 100%;
-    display:grid;
-    grid-auto-flow: row;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    background-color: blue;
 
+.sectionOne_text h1,h6 {
+    color: #DAA520;
 }
 
 
-.sectionOneA {
-    width: 100%;
-}
 
-.sectionOneB {
-    width: 100%;
-}
-.navSectionLg {
-        display: none  !important;
-    }
-
-
-
+ 
 
 
 /* styles section for the media qurries */
@@ -170,3 +219,35 @@ body{
 }
 
 
+/* key frames and animations */
+
+.listMirror {
+    animation :slideDown 1s ;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translatex(-300px);
+    }
+    to {
+        transform: translatex(0px);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translatex(300px);
+    }
+    to {
+        transform: translatex(0px);
+    }
+}

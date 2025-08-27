@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     z-index: 1000;
 }
 /* STYLES OPTION FOR THE HEADER SECTION */
 
@@ -12,6 +13,7 @@
     width: 100vw;
     background-color: yellow;
     position: absolute;
+   
     
 }
 
@@ -43,8 +45,8 @@
 /* STYLES  OPTION FOR THE SLIDE {WHOLE CONTAINER }*/
 .slide{
     width:250px;
-    box-shadow: 2px 2px 8px pink;
-    background-color: black;
+    box-shadow: 2px 2px 2px rgb(2, 255, 2);
+    background-color:transparent;
     position: absolute;
     transition: 0.5s ease;
     transform: translateX(-274px);
@@ -52,7 +54,7 @@
 
 /* STYLES OPTION FOR THE H1 {MENU SECTION} */
 .slide h1{
-    color:black;
+    color:green;
     padding: 2px 5px 0px 25px ;
     pointer-events: none;
     font-weight: 800;
@@ -64,7 +66,7 @@
 /* STYLES OPTION FOR THE LIST */
 .slide ul li{
     list-style: none;
-    background-color: blue;
+    background-color: transparent;
     margin: 0%;
     box-shadow: 2px 2px 4px gray;
 
@@ -72,7 +74,7 @@
 
 /* STYLES OPTION FOR THE ANCHOR TAG */
 .slide ul li a{
-    color: black;
+    color: white;
     display: block;
     text-decoration: none;
     text-transform: capitalize;
@@ -171,6 +173,6 @@ input{
         display: none;
     }
     
-   
-
 }
+
+

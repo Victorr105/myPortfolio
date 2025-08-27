@@ -9,11 +9,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- custom css links -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/stylesForNavbar.css">
+
     
 </head>
 <body>
+    <div class="overlay"></div>
+    <div class="background_video" >
+        <video autoplay loop muted  id="backgroundVideo" >
+             <source src="videos/bc1.mp4">
+        </video>
+    </div>
+   
 
     <!-- Navigation Bar section -->
     <section>
@@ -50,12 +63,10 @@
                 <div class="slide">
                     <h1>MENU</h1>
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">servises</a></li>
-                        <li><a href="#">delivery</a></li>
-                        <li><a href="#">contact</a></li>
-                        <li><a href="#">location</a></li>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
             
                     </ul>
                 </div>
@@ -64,31 +75,38 @@
         </div>
 
 
-        <!-- navSection for the bigger screens  -->
+        <!-- navSecPtion for the bigger screens  -->
         <div class="navSectionLg container-fluid  shadow bg-transparent">
             <div class="d-flex w-100">
 
                     <div class="logo w-25 " >
-                                <span class="text-center  text-success fs-3 fw-bold">VICTOR</span>
+                                <div class="  sectionOneA ">
+                   <p> <span class="text text-white fs-2 fw-bold" id="text"></span> </p> 
+                </div>
                     </div>
                     <div class="navSection d-flex justify-content-center align-items-center  ">
                         <div class="listMirror mt-2 ">
                             <nav class="nav-link ">
                                     <ul class="navSectionNav d-flex justify-content-center gap-5  ">
-                                        <li class="li list-unstyled"><a href="" class=" text text-white fw-light text-decoration-none  "> HOME</a></li>
-                                        <li class="li list-unstyled"><a href="" class="text-white  fw-light text-decoration-none "> ABOUT ME </a></li>
-                                        <li class="li list-unstyled"><a href="" class="text-white  fw-light text-decoration-none "> PROJECTS</a></li>
+                                        <li class="li list-unstyled"><a href="#home" class=" text text-white fw-light text-decoration-none  "> HOME</a></li>
+                                        <li class="li list-unstyled"><a href="#about" class="text-white  fw-light text-decoration-none "> ABOUT ME </a></li>
+                                        <li class="li list-unstyled"><a href="#projects" class="text-white  fw-light text-decoration-none "> PROJECTS</a></li>
                                         
-                                        <li class="li list-unstyled"><a href="" class="text-white  fw-light text-decoration-none me-3"> CONTACT</a></li>
+                                        <li class="li list-unstyled"><a href="#contact" class="text-white  fw-light text-decoration-none me-3"> CONTACT</a></li>
                                     </ul>
                             </nav>
                         </div>
                     </div>
-                    <div class="logo w-25 " >
-                        <span class="text-center text-success fs-3 fw-bold d-flex bg-black justify-content-center gap-5"> 
+                    <div class="logo logo2 w-25 " >
+                        <span class="text-center text-success fs-3 fw-bold d-flex  justify-content-center gap-5"> 
                             <!-- light and dark mode  -->
-                            <div><i class="bi bi-sun"></i></div>
-                            <div><button class="btn btn-primary ">Blog</button></div>
+                             
+                            <button class="btn btn-outline-primary  rounded-pill m3-4" id="darkLight">
+                                <span class="bi bi-moon"></span>
+                            </button>
+
+
+                            <div><button class="btn  blog">Blog</button></div>
                         </span>
                     </div>
 
@@ -98,27 +116,25 @@
 
     </section>
 
+    <section id="home" >
+        <div class=" container position-relative sectionOne  ">
+            <div class="sectionOne_text text-center" >
+                <h6>Welcome to my site,</h6> 
+                <h1>I'm Njoroge Victor,</h1> 
+                <h1> A fullstack Software-Developer based in Kenya</h1>
+            </div>
 
-
-    <section>
-        <div class=" container sectionOne ">
-
-           
-                <div class="  sectionOneA  bg-danger">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta sed magni labore quas tempore amet officia aut libero quae optio ducimus soluta, exercitationem eaque pariatur molestias hic porro totam non cum aspernatur? Temporibus omnis repudiandae quam itaque quaerat! Quis dolores eum nihil. Minima voluptates consequuntur facilis ullam cupiditate magni non voluptatum amet, velit eos asperiores, eum ut repellendus sed ratione nisi dolor fugiat molestias. Quo animi error et optio, hic autem consequatur velit perferendis impedit minus aut ipsam assumenda porro esse possimus illum fugiat expedita sint in natus nemo reiciendis ipsum. Dolores ipsa, vitae ut magni quam voluptatibus consequatur?
-                </div>
-
-                <div class="sectionOneB  bg-dark text-white">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quod necessitatibus praesentium, nisi ut rem beatae hic veniam vitae? Vitae impedit tempore earum ut pariatur velit perferendis asperiores facere saepe! Adipisci debitis quod nostrum suscipit magni sit harum dignissimos, facilis accusantium fugiat vero vel modi quas fuga quasi tempore a. Voluptatibus sequi enim minus maxime doloremque animi perferendis, saepe facere reiciendis, quis, pariatur illum. Nulla quibusdam ea sint cum exercitationem dolore debitis accusamus quisquam dolorem eaque perspiciatis sit unde cumque excepturi minima suscipit eos ipsa fugit iure reprehenderit consequatur, officiis odit deserunt molestias? Distinctio natus autem molestias, culpa at incidunt.
-                </div>
-
+                
 
         </div>
     </section>
 
-
-
-
+    
+     
+    
     <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
