@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myPortfolio</title>
+    
     <!-- for the cdn  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    
     <!-- custom css links -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/stylesForNavbar.css">
+    
+
 
     
 </head>
 <body>
     <div class="overlay"></div>
+            
+        
+    </div>
     <div class="background_video" >
         <video autoplay loop muted  id="backgroundVideo" >
              <source src="videos/bc1.mp4">
@@ -29,13 +32,12 @@
    
 
     <!-- Navigation Bar section -->
-    <section>
 
         <div class="ParentDivForNAvsection">  <!-- This here is the parent div for the whole small screen navbar section   -->
         
         <!-- START OF THE SIDEBAR -->
 
-        <div class=" headerInfo position-absolute ">
+        <div class=" headerInfo position-relative ">
 
             <div class="logo   text-end px-5 ">
                 <h1 >Victor</h1>
@@ -80,8 +82,8 @@
             <div class="d-flex w-100">
 
                     <div class="logo w-25 " >
-                                <div class="  sectionOneA ">
-                   <p> <span class="text text-white fs-2 fw-bold" id="text"></span> </p> 
+                                <div class="sectionOneA ">
+                   <p> <span class="text fs-2 fw-bold" id="text"></span> </p> 
                 </div>
                     </div>
                     <div class="navSection d-flex justify-content-center align-items-center  ">
@@ -112,22 +114,153 @@
 
             </div>
         
-         </div>
-
-    </section>
-
-    <section id="home" >
-        <div class=" container position-relative sectionOne  ">
-            <div class="sectionOne_text text-center" >
-                <h6>Welcome to my site,</h6> 
-                <h1>I'm Njoroge Victor,</h1> 
-                <h1> A fullstack Software-Developer based in Kenya</h1>
             </div>
 
+    <section id="home " class="home mt-4" >
+        <!-- Profile section -->
+         <div class=" container position-relative HomeSectionOne  ">
+            <div class=" profilePicture ">
+                <!-- <img src="images/profilePicture.jpeg" alt=""> -->
                 
+            </div>
+            
+        </div>
+
+        <div class=" container position-relative HomeSectionTwo  ">
+            <div class="sectionOne_text text-center" >
+                <h5>Welcome to my site,</h5> 
+                <h1>I'm Njoroge Victor,</h1> 
+                <h1> <span id="xxxx"></span></h1>
+            </div>
+        </div>
+
+
+        <div class="container position-relative HomeSectionFour mb-5">
+            <div>
+                <p class="text-info  text-center">
+                    <i class="bi bi-chat-left-quote-fill fs-1"></i> <br>
+
+                    <i class="bi bi-quote fs-5
+                    "></i>
+                    <span>As a software developer I build websites , web apps,mobile apps, solve problems, and turn ideas into code. I’m passionate about creating digital experiences that make an impact, constantly learning, and pushing my skills to the next level.</span>
+                      </p>
+            </div >
+        </div>
+
+        <div class="  position-relative justify-content-start HomeSectionThree ">
+            <div class="marquee1">
+                    <img src="images/p1.svg" width="60px" alt="python">
+                    <img src="images/js.png" width="60px" alt="javascript">
+                    <img src="images/h1.svg" width="60px" alt="html">
+                    <img src="images/MySQL.svg" width="60px" alt="mysql">
+                    <img src="images/c.svg" width="60px" alt="css"> 
+   
+            </div>
+    
+            <div class="marquee1 mt-3">
+                    <img src="images/React.svg" width="60px" alt="python">
+                    <img src="images/TailwindCSS.svg" width="60px" alt="html">
+                    <img src="images/Vue.js.svg" width="60px" alt="python">
+                    <img src="images/Vite.js.svg" width="60px" alt="html">
+                    <img src="images/Bootstrap.svg" width="60px" alt="html">
+            
+            </div>
 
         </div>
+        
     </section>
+
+        <section class="scroll-section">
+            <div class="position-relative text-white fade-in-on-scroll p-3 AboutSectionOne">
+                <h1>LANGUAGES</h1> 
+                <p style="color: rgb(214, 203, 203);">I work with various programming languages to develop effective solutions.Below are some of the technologies I frequently use.
+                </p>
+
+                <div class="language d-flex">
+                <img src="images/js.png" width="50px"> <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">Javascriprt </p><p class="text-info fs-3 fw-bold" style="padding: 4% 0% 0% 25%;">80% </p>
+                </div>
+                <div class="language mt-3 d-flex">
+                    <img src="images/python (1).png" width="50px"> <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">Python</p></p><p class="text-info fs-3 fw-bold" style="padding: 4% 0% 0% 25%;">40% </p>
+                </div>
+                <div class="language mt-3 d-flex">
+                    <img src="images/MySQL.svg" width="50px"> <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">Mysql</p></p><p class="text-info fs-3 fw-bold" style="padding: 4% 0% 0% 25%;">90% </p>
+                </div>
+                
+                <div class="language mt-3 d-flex">
+                    <img src="images/PHP.svg" width="50px">  <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">PHP</p></p><p class="text-info fs-3 fw-bold" style="padding: 4% 0% 0% 25%;">80% </p>
+                </div>
+                <div class="language mt-3 d-flex">
+                    <img src="images/h1.svg" width="50px"><img src="images/c.svg" width="50px" alt="">  <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">Html & Css</p> </p><p class="text-info fs-3 fw-bold" style="padding: 4% 0% 0% 25%;">95% </p>
+                </div>
+                <div class="language mt-3 d-flex">
+                    <img src="images/git.svg" width="50px"> <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">git</p></p><p class="text-info fs-3 fw-bold" style="padding: 4% 0% 0% 25%;">95% </p>
+                </div>
+            </div>
+            
+            
+
+        </section>
+
+
+
+
+        <section class="scroll-section">
+            <div class="position-relative text-white fade-in-on-scroll p-3 AboutSectionOne">
+                <h1>Technologies</h1> 
+                <p style="color: rgb(214, 203, 203);">I use various modern technologies to create effective solutions.Here are some of the main tools i work with
+                </p>
+
+                <div class="language d-flex">
+                <img src="images/next.svg" width="50px"> <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">NextJs </p>
+                </div>
+                <div class="language mt-3 d-flex">
+                    <img src="images/React.svg" width="50px"> <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">React</p>
+                </div>
+                <div class="language mt-3 d-flex">
+                    <img src="images/TailwindCSS.svg" width="50px"> <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">Tailwind</p>
+                </div>
+                
+                <div class="language mt-3 d-flex">
+                    <img src="images/Bootstrap.svg" width="50px">  <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">Bootstrap</p>
+                </div>
+                <div class="language mt-3 d-flex">
+                    <img src="images/Vite.js.svg" width="50px"> <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">ViteJs</p>
+                </div>
+                <div class="language mt-3 d-flex">
+                    <img src="images/Vue.js.svg" width="50px"> <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">VueJs</p>
+                </div>
+                <div class="language mt-3 d-flex">
+                    <img src="images/Laravel.svg" width="50px"> <p class="text-white fs-3 fw-bold" style="padding: 4% 0% 0% 5%;">Laravel</p>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section class="scroll-section">
+            <div class="fade-in-on-scroll position-relative projectSection p-4">
+                <h1 class="text-white">My Projects :</h1>
+                <div class="d-flex text-center justify-content-center gap-5">
+                    <i class="bi bi-cone-striped construction fs-1" style="color: #DAA520;"></i> 
+                    <div style="background-color: #DAA520; border-radius: 10px ; padding: 1% 3%;" class="shadow"><p class="text-center fw-bold fs-4">Under Development</p></div>
+                </div>
+                <div style="background-color: black; margin-top: 2%; text-align: center; padding: 2% 0%; border-radius: 10px; border: 1px solid blue;box-shadow: 0px 0px 5px greenyellow ;">
+                    <p class="text-info fw-bolder px-3">Financial Transport Management System(FTMS)</p>
+                    <p class="text-center px-5 text-light">I'm currently working on :</p>
+                    <p class="text-center px-5 text-light"> A system designed to help <strong>bus and matatu owners/operators</strong> 
+                        manage their daily income, track expenses, and automatically reinvest profits 
+                        into structured financial tools.
+                    </p>
+
+                    <button class="btn bg-transparent">
+                        <a href="https://victorr105.github.io/random_joke/"> View on Github</a>
+                    </button>
+                    
+                    
+                </div>
+
+            </div>
+        </section>
 
     
      

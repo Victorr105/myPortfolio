@@ -12,7 +12,8 @@
     display: flex;
     width: 100vw;
     background-color: yellow;
-    position: absolute;
+    position: relative;
+    z-index: -1---;
    
     
 }
@@ -29,6 +30,7 @@
     display: flex;
     justify-content: end;
     padding:0% 4% 0% 0%;
+    background-color: #fff;
     gap: 6%;
 }
 
@@ -36,6 +38,8 @@
 .headerInfo .logo {
     width: 60%;
     color: aqua;
+    background-color: purple;
+    z-index: -10000;
 }
 
 
@@ -47,7 +51,7 @@
     width:250px;
     box-shadow: 2px 2px 2px rgb(2, 255, 2);
     background-color:transparent;
-    position: absolute;
+    position: relative;
     transition: 0.5s ease;
     transform: translateX(-274px);
 }
@@ -95,6 +99,7 @@
 input{
     display: none;
     visibility: hidden;
+    position: relative;
     
 }
 

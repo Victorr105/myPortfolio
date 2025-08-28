@@ -23,6 +23,7 @@ body{
     font-family: "Meow Script", cursive;
     font-weight: 400;
     font-style: normal;
+    color: #DAA520;
 }
 .overlay {
         position: fixed;
@@ -113,35 +114,125 @@ body{
     height: fit-content;
     text-align: center;
     /* css for the glass effect */
-    background: rgba(255, 255, 255, 0.1);     /* Semi-transparent */
-    backdrop-filter: blur(12px);             /* Frosted glass blur */
-    -webkit-backdrop-filter: blur(12px);     /* Safari support */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
-                        /* Rounded corners */
-                        /* Inner spacing */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background: rgba(255, 255, 255, 0.1);  
+    backdrop-filter: blur(12px);             
+    -webkit-backdrop-filter: blur(12px);     
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.blog button:hover {
-    background-color:#DAA520 ;
+
+
+
+
+/* start of the home section */
+
+
+.home {
+    padding:5%;
+    height: 100vh;
+    /* background-color:blue; */
 }
 
-/* Start of the section 1 phase */
+.HomeSectionOne {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    background-image: url(../images/profilePicture.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 0%;
+    background-size: cover;
+    border:  3px solid rgb(0, 0, 0) ;
+    object-fit: cover;
+    height:30vh;
+    border-radius: 50%;
+    justify-content: center;
+    box-shadow: 0 0 10px #063129, 0 0 5px #ff7b00, 0 0 20px #383b3b;
+    animation: float 3s ease-in-out infinite;
+}
 
-.sectionOne {
-    margin-top: 5%;
-    padding: 7% 10%;
-    background-color: #ffffff0c;
+
+
+
+
+.HomeSectionOne .profilePicture{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    
+}
+
+.HomeSectionTwo {
+    margin-top: 10%;
+    width: 100%;
+    height: fit-content;
+}
+
+.HomeSectionTwo h5{
+     color: #DAA520;
+}
+
+.HomeSectionTwo h1{
+     color: white;
+}
+
+
+.HomeSectionThree {
+    background-color: #06312979;
+    margin-left:10%;
     border-radius: 10px;
+    width: 330px;
+    min-width: 330px;
+    padding: 2% 1%;
+
+}
+.marquee1 img{
+        background-color:#031310;
+        box-shadow: 0 0 1px white;
+        padding: 1px;
+        border-radius: 10px;
 }
 
-.sectionOne_text h1,h6 {
-    color: #DAA520;
+.HomeSectionFour {
+    background: rgba(255, 255, 255, 0.1);  
+    backdrop-filter: blur(12px);             
+    -webkit-backdrop-filter: blur(12px);     
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    padding: 2%;
+    border-radius: 10px;
+
+
 }
 
 
+/* About section */
 
- 
+
+.AboutSectionOne {
+ padding: 0% 2%;
+ width: 100% ;
+ background-color: #ffffff2a;
+
+}
+
+.language {
+    width: 100%;
+    padding: 1% 2%;
+    max-height:70px;
+    background-color: rgba(68, 67, 67, 0.685);
+    border-radius:8px ;
+}
+
+.language:hover {
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+.projectSection {
+    background-color: #ffffff2a;
+}
+
 
 
 /* styles section for the media qurries */
@@ -251,3 +342,51 @@ body{
         transform: translatex(0px);
     }
 }
+
+@keyframes spin {
+  from { transform: rotateX(0deg) rotateY(0deg); }
+  to   { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+/* keyFrame for the floating profile effect */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-20px); } /* moves up */
+  100% { transform: translateY(0px); }   /* back to start */
+}
+
+
+
+.scroll-section {
+  height: 90vh; /* full screen height for scrolling effect */
+  justify-content: center;
+  align-items: center;
+  padding-top:15% ;
+}
+
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(20px); /* start slightly lower */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0); /* move to original position */
+}
+
+
+.socialIcons {
+    float: right;
+    color: white;
+    margin-top: 50vh;
+    margin-right: 8%;
+    background-color: red;
+}
+
+.socialIconsPosition {
+    position: relative;
+    z-index: 10000;
+}
+
+.socialIconsPosition 
