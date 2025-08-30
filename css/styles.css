@@ -11,14 +11,11 @@
 /* styles section for the overall code  */
 
 section {
-    width: 100vw;
-    height: 100vh;
     z-index: -10;
 }
 
 /* styles for the fadeIn FadeOut  */
 .scroll-section {
-  height:100vh ;
   justify-content: center;
   align-items: center;
   padding-top:5% ;
@@ -112,7 +109,7 @@ section {
 
 /* styles for the menu options */
 .listMirror {
-    width: fit-content;
+    width: 100%;
     height: 51px;
     /* css for the glass effect */
     background: rgba(255, 255, 255, 0.1);     /* Semi-transparent */
@@ -120,7 +117,7 @@ section {
     -webkit-backdrop-filter: blur(12px);     /* Safari support */
     border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
     border-radius: 10px;                     /* Rounded corners */
-    padding: 0px 40px;                      /* Inner spacing */
+    padding: 0px ;                      /* Inner spacing */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
@@ -192,18 +189,25 @@ section {
 
 .HomeSectionThree {
     background-color: #06312979;
-    margin-left:10%;
+    margin:0 4%;
     border-radius: 10px;
-    width: 330px;
-    min-width: 330px;
+    width: 90%;
+    max-width: 90%;
     padding: 2% 1%;
 
 }
+
+.marquee1 {
+    padding: 0% 5%;
+    margin: 1% 0%;
+}
 .marquee1 img{
-        background-color:#031310;
-        box-shadow: 0 0 1px white;
-        padding: 1px;
-        border-radius: 10px;
+    background-color:#031310;
+    box-shadow: 0 0 1px white;
+    padding: 1px;
+    border-radius: 10px;
+    width: 17% ;
+    max-width: 17%;
 }
 
 .HomeSectionFour {
@@ -220,7 +224,7 @@ section {
 
 
 
-/* About section */
+/* Skills section*/
 
 
 .AboutSectionOne {
@@ -233,6 +237,11 @@ section {
 .language {
     width: 100%;
     gap: 1%;
+}
+
+.language img {
+    width: 17% !important;
+    min-width: 18%;
 }
 
 .languageOne {
@@ -257,11 +266,97 @@ section {
      background-color: #ffffff2a;
 
 }
+
+/* Project section */
+
 .projectSection {
     background-color: #2e2d2d57;
 }
 
+/* contact section */
 
+#contact {
+
+
+}
+.contactSection {
+    background-color: #2e2d2d57;
+}
+
+.formButton {
+    margin: 1%;
+}
+.formButton button {
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #031310;
+    color: white;
+}
+
+.formButton button:hover {
+    background-color: rgba(0, 0, 255, 0.658);
+}
+form {
+    background: rgba(255, 255, 255, 0.1);  
+    backdrop-filter: blur(12px);             
+    -webkit-backdrop-filter: blur(12px);     
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    padding: 2% ;
+    border-radius: 10px;
+}
+
+
+ .formSection input{
+    width: 95%;
+    height: 38px;
+    border-radius: 4px;
+    padding-left: 20px;
+    margin: 1px;
+    border: none;
+}
+
+.formSection .textarea {
+    height: 90px;
+}
+
+
+#submitBtn button {
+ width: 80%;
+}
+
+
+/* footer section */
+footer {
+    width: 100%;
+    height: 23vh;
+    background-color: black;
+}
+
+.footer {
+    padding: 8% 0% 0% 25%;
+}
+
+.footer i:hover {
+    color: #DAA520;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+footer .copyright {
+    font-family: "Meow Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #DAA520;
+    padding: 0% 0% 5% 0%;
+}
+
+
+
+.footerSection  .scroll-section{
+    height: 26vh;
+}
 
 /* styles section for the media qurries */
 

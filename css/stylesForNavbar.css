@@ -38,8 +38,6 @@
 .slide{
     width:250px;
     box-shadow: 2px 2px 8px green;
-    
-    position: absolute;
     transition: 0.5s ease;
     transform: translateX(-250px);
 }
@@ -65,7 +63,7 @@
 }
 
 /* STYLES OPTION FOR THE ANCHOR TAG */
-ul li a{
+.slide ul li a{
     color: black;
     display: block;
     text-decoration: none;
@@ -78,13 +76,13 @@ ul li a{
 }
 
 /* STYLES OPTION FOR THE HOVERING EFFECT  */
-ul li a:hover{
+.slide ul li a:hover{
    background-color: black;
    color: white;
    transition: 1s ease;
 }
  /* STYLES OPTION FOR THE INPUT {THE CHECKBOX VISIBILITY} */
-input{
+.sidebar input{
     display: none;
     visibility: hidden;
     
@@ -101,7 +99,7 @@ input{
     cursor: pointer;
     border-radius: 2px;
     box-shadow: 2px 1px 10px 3px rgb(12, 8, 202);
-    background-color: white;
+    background-color: red;
 }
 
 
@@ -113,6 +111,7 @@ input{
     background-color:black; /* STYLES OPTION FOR THE ANIMATED X OPTION*/
     border-radius: 50px;
     transition: 0.3s ease;
+    z-index: inherit;
 }
 
 .toggle .top-line{
@@ -132,26 +131,26 @@ input{
 }
 
 
-input:checked ~ .toggle .top-line{
+.sidebar input:checked ~ .toggle .top-line{
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(45deg);
 }
-input:checked ~ .toggle .bottom-line{
+.sidebar input:checked ~ .toggle .bottom-line{
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(-45deg);
 }
 
-input:checked ~ .toggle .middle-line{
+.sidebar input:checked ~ .toggle .middle-line{
     opacity: 0;
     width: 25px;
     transform: translateX(20px);
 }
 
-input:checked ~ .slide{
+.sidebar input:checked ~ .slide{
     transform: translateX(0);
     box-shadow: 0 0 red;
 }

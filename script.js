@@ -54,3 +54,6 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 
+// section for @copyright
+const currentYear = new Date().getFullYear();
+  document.getElementById("year").textContent = currentYear;
