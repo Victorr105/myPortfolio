@@ -5,42 +5,63 @@
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
-    
 }
 
 
 /* styles section for the overall code  */
 
-body{
-
-    position: relative;
-    
+section {
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
 }
 
-/* the styles section for the background video */
+/* styles for the fadeIn FadeOut  */
+.scroll-section {
+  height:100vh ;
+  justify-content: center;
+  align-items: center;
+  padding-top:5% ;
+}
 
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0); /* move to original position */
+}
+
+
+/* styles for the typedJs text  */
 .text {
     font-family: "Meow Script", cursive;
     font-weight: 400;
     font-style: normal;
     color: #DAA520;
 }
+
+/* styles for the overlay */
 .overlay {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.644); /* Dark overlay for readability */
-        z-index: 1;
+        background: rgba(20, 20, 20, 0.384); /* Dark overlay for readability */
+        z-index: -100;
     }
+    /* styles for background video */
 .background video {
     width:100%;
     height:100%;
-    position :absolute ;
+    position: absolute;
     top:0;
     left:0;
-    z-index: -1000;
+    
 }
 
 .background_video video {
@@ -51,13 +72,14 @@ body{
     z-index: -1000;
 }
 
-/* code for the nav Section */
+
+
+/* styles for the nav Section */
 .navSectionLg {
         display: none  !important;
 }
 
 .navSectionLg {
-    margin-bottom: 2%;
     position: absolute;
     top: 0%;
 }
@@ -70,10 +92,14 @@ body{
 .navSection {
     width: 70%;
 }
-
 .logo {
-    animation :slideLeft 1s ;
     width: 15%;
+
+}
+
+.logo h1{
+    animation :slideLeft 1s ;
+   
 
 }
 
@@ -84,7 +110,7 @@ body{
 }
 
 
-
+/* styles for the menu options */
 .listMirror {
     width: fit-content;
     height: 51px;
@@ -97,7 +123,6 @@ body{
     padding: 0px 40px;                      /* Inner spacing */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
-
 
 .navSection nav ul li a {
     line-height: 50px;
@@ -124,45 +149,31 @@ body{
 
 
 
-
-
 /* start of the home section */
 
 
 .home {
     padding:5%;
-    height: 100vh;
     /* background-color:blue; */
 }
 
+
 .HomeSectionOne {
-    display: flex;
-    align-items: center;
-    width: 75%;
-    background-image: url(../images/profilePicture.jpeg);
+    margin-left: 20%;
+    width: 230px;
+    height: 230px;
+    background-image: url(../images/p3.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: 0%;
     background-size: cover;
     border:  3px solid rgb(0, 0, 0) ;
     object-fit: cover;
-    height:30vh;
     border-radius: 50%;
-    justify-content: center;
     box-shadow: 0 0 10px #063129, 0 0 5px #ff7b00, 0 0 20px #383b3b;
     animation: float 3s ease-in-out infinite;
 }
 
-
-
-
-
-.HomeSectionOne .profilePicture{
-    background-color: #fff;
-    width: 100%;
-    height: auto;
-    
-}
 
 .HomeSectionTwo {
     margin-top: 10%;
@@ -207,6 +218,8 @@ body{
 }
 
 
+
+
 /* About section */
 
 
@@ -219,18 +232,33 @@ body{
 
 .language {
     width: 100%;
+    gap: 1%;
+}
+
+.languageOne {
     padding: 1% 2%;
-    max-height:70px;
-    background-color: rgba(68, 67, 67, 0.685);
+    margin: 1% 0%;
+    background-color: rgba(20, 20, 20, 0.925);
     border-radius:8px ;
 }
 
-.language:hover {
-    background-color: rgba(0, 0, 0, 0.459);
+.languageOne:hover {
+    background-color: rgb(0, 0, 0);
+    
 }
 
+.languageTwo img {
+    margin-left: 40%;
+}
+
+/* About section two */
+.AboutSectionTwo {
+    margin-top: 18%;
+     background-color: #ffffff2a;
+
+}
 .projectSection {
-    background-color: #ffffff2a;
+    background-color: #2e2d2d57;
 }
 
 
@@ -357,36 +385,4 @@ body{
 
 
 
-.scroll-section {
-  height: 90vh; /* full screen height for scrolling effect */
-  justify-content: center;
-  align-items: center;
-  padding-top:15% ;
-}
 
-.fade-in-on-scroll {
-  opacity: 0;
-  transform: translateY(20px); /* start slightly lower */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in-on-scroll.active {
-  opacity: 1;
-  transform: translateY(0); /* move to original position */
-}
-
-
-.socialIcons {
-    float: right;
-    color: white;
-    margin-top: 50vh;
-    margin-right: 8%;
-    background-color: red;
-}
-
-.socialIconsPosition {
-    position: relative;
-    z-index: 10000;
-}
-
-.socialIconsPosition 

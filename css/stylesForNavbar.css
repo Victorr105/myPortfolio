@@ -2,27 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     z-index: 1000;
-}
-/* STYLES OPTION FOR THE HEADER SECTION */
-
-
-
-.parentForHeader {
-    display: flex;
-    width: 100vw;
-    background-color: yellow;
-    position: relative;
-    z-index: -1---;
-   
-    
 }
 
+
+/* STYLES OPTION FOR THE HEADER SECTION for the smaller screen  */
 .headerInfo {
-    display :flex;
-    justify-content: center;
-    width: 100%;
     gap: 1%;
+    /* background-color:  blue; */
+}
+
+.headerInfo .logo {
+    width: 60%;
+    color: aqua;
+    padding: 10px 10px 0px 0px;
+    /* background-color: purple; */
 }
 
 .headerInfo .darkMode {
@@ -30,36 +23,31 @@
     display: flex;
     justify-content: end;
     padding:0% 4% 0% 0%;
-    background-color: #fff;
+    /* background-color: #fff; */
     gap: 6%;
 }
 
 
-.headerInfo .logo {
-    width: 60%;
-    color: aqua;
-    background-color: purple;
-    z-index: -10000;
+.parentForHambuger{
+    position: fixed;
+    z-index: 100;
+    top: 0;
 }
 
-
-/* STYLES OPTION FOR THE SEARCHBAR SECTION */
-
- 
 /* STYLES  OPTION FOR THE SLIDE {WHOLE CONTAINER }*/
 .slide{
     width:250px;
-    box-shadow: 2px 2px 2px rgb(2, 255, 2);
-    background-color:transparent;
-    position: relative;
+    box-shadow: 2px 2px 8px green;
+    
+    position: absolute;
     transition: 0.5s ease;
-    transform: translateX(-274px);
+    transform: translateX(-250px);
 }
 
 /* STYLES OPTION FOR THE H1 {MENU SECTION} */
 .slide h1{
-    color:green;
-    padding: 2px 5px 0px 25px ;
+    color:rgb(24, 236, 4);
+    margin: 15px 5px 0px 25px ;
     pointer-events: none;
     font-weight: 800;
     font-size: 2.0rem;
@@ -70,15 +58,15 @@
 /* STYLES OPTION FOR THE LIST */
 .slide ul li{
     list-style: none;
-    background-color: transparent;
+    background-color: blue;
     margin: 0%;
     box-shadow: 2px 2px 4px gray;
 
 }
 
 /* STYLES OPTION FOR THE ANCHOR TAG */
-.slide ul li a{
-    color: white;
+ul li a{
+    color: black;
     display: block;
     text-decoration: none;
     text-transform: capitalize;
@@ -90,7 +78,7 @@
 }
 
 /* STYLES OPTION FOR THE HOVERING EFFECT  */
-.slide ul li a:hover{
+ul li a:hover{
    background-color: black;
    color: white;
    transition: 1s ease;
@@ -99,7 +87,6 @@
 input{
     display: none;
     visibility: hidden;
-    position: relative;
     
 }
 
@@ -108,13 +95,13 @@ input{
     position: absolute;
     height: 30px;
     width: 30px;
-    top: 5px;
+    top: 10px;
     left: 15px;
     z-index: 1;
     cursor: pointer;
     border-radius: 2px;
-    box-shadow: 0 0 10px gray;
-    background-color: red;
+    box-shadow: 2px 1px 10px 3px rgb(12, 8, 202);
+    background-color: white;
 }
 
 
@@ -145,26 +132,26 @@ input{
 }
 
 
- input:checked ~ .toggle .top-line{
+input:checked ~ .toggle .top-line{
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(45deg);
 }
- input:checked ~ .toggle .bottom-line{
+input:checked ~ .toggle .bottom-line{
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(-45deg);
 }
 
- input:checked ~ .toggle .middle-line{
+input:checked ~ .toggle .middle-line{
     opacity: 0;
     width: 25px;
     transform: translateX(20px);
 }
 
- input:checked ~ .slide{
+input:checked ~ .slide{
     transform: translateX(0);
     box-shadow: 0 0 red;
 }
@@ -175,6 +162,9 @@ input{
         display: none !important;
     }
     .toggle {
+        display: none;
+    }
+    .slide{
         display: none;
     }
     
