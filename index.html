@@ -12,146 +12,129 @@
     <!-- custom css links -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/stylesForNavbar.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/stylesDarkmode.css">
     
 
-    
 </head>
 <body>
-    <!-- overlay section -->
-    <div class="overlay"></div>
-            
-    </div>
-    <!-- background video section -->
-    <div class="background_video" >
-        <video autoplay loop muted  id="backgroundVideo" >
-             <source src="videos/bc1.mp4">
-        </video>
-    </div>
-   
 
-    <!-- Navigation Bar section -->
-        <div class="ParentDivForNAvsection">  <!-- This here is the parent div for the whole small screen navbar section   -->
-        
-            <!-- START OF THE SIDEBAR -->
+    <!-- Navigation Bar section  for smaller screens-->
 
-            <div class=" headerInfo  d-flex justify-content-center w-100 ">
-                <!-- logo -->
-                <div class="logo  text-end ">
-                    <h1 >Victor</h1>
-                </div>
-                <!-- darkmode -->
-                <div class="darkMode">
-                    <!-- darkmode icon btn -->
-                    <div class="pt-1">
-                        <i class="bi bi-sun fs-3 text-white " style=" box-shadow: 1px 1px 10px 2px green; background-color: transparent;"></i>
-                    </div>
-                <!-- blog btm   -->
-                    <div class="darkmodeSide p-1" id="blog">
-                        <button class="btn btn-primary ">Blog</button>
-                    </div>
-
-                    </div>
-                </div>
-                
-        </div>
-        <!-- start of the toogle section for the hamburger menu -->
-        <div class="parentForHambuger">
-            <div class="sidebar">
-                <label>
-                <input type="checkbox">
-                <div class="ParentForToggle">
-                    <div class="toggle">
-                    <span class="top-line common"></span>
-                    <span class="middle-line common"></span>
-                    <span class="bottom-line common"></span>
-                </div>
-                </div>
-                <div class="slide">
-                    <h1>MENU</h1>
-                    <ul>
-                        <li><a href="#index">home</a></li>
-                        <li><a href="#skills">about</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-            
-                    </ul>
-                </div>
-                </label>
+        <nav style="box-shadow: 1px 1px 13px 3px #daa52091 ;" class="nav-sm d-flex justify-content-center">
+            <div class="logo-sm">
+                <h1></h1>
             </div>
-        </div>
-            
-        </div>
+             <div class="justify-content-end text-center  ">
 
+                    <!-- we use custom css that is linked to  our styles.css -->
+                    <button class="btn fs darkmodeSun" id="darkLight">
+                        <span class="bi bi-sun fs-2"></span>
+                    </button>
+                 </div>
+        </nav>
 
+        <!-- start of the toogle section for the hamburger menu -->
+       
+        
+            <label>
+                <div class="sidebar">
+                <input type="checkbox" class="checkbox">
+                    <div class="toggle">
+                        <span class="top-line common"></span>
+                        <span class="middle-line common"></span>
+                        <span class="bottom-line common"></span>
+                    </div>
+                
+                
+
+                    <div class="slide">
+                        <h1 class="text-center"> MENU</h1>
+                        <ul>
+                            <li><a href="#" class="fs-4">home</a></li>
+                            <li><a href="#" class="fs-4">about</a></li>
+                            <li><a href="#" class="fs-4">servises</a></li>
+                            <li><a href="#" class="fs-4">delivery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </label>
+        
+  
+        
         <!-- navSecPtion for the bigger screens  -->
-        <div class="navSectionLg container-fluid  shadow bg-transparent">
+        <div class="navSectionLg container-fluid  shadow ">
             <div class="d-flex w-100">
 
-                    <div class="logo w-25 " >
-                                <div class="sectionOneA ">
-                   <p> <span class="text fs-2 fw-bold" id="text"></span> </p> 
+                <div class="logo bg-danger" >
+                    <div class="sectionOneA ">
+                        <p><span class="text fs-2 fw-bold" id="text"></span> </p> 
+                     </div>
                 </div>
+                <div class="navSection d-flex justify-content-center align-items-center bg-primary">
+                    <div class="listMirror  ">
+                        <nav class="nav-link ">
+                                <ul class="navSectionNav d-flex justify-content-center gap-sm-2 gap-md-3 gap-lg-4 gap-xl-5  ">
+                                    <li class="li list-unstyled"><a href="#home" class=" text text-white fw-light text-decoration-none  "> HOME</a></li>
+                                    <li class="li list-unstyled"><a href="#about" class="text-white  fw-light text-decoration-none "> ABOUT ME </a></li>
+                                    <li class="li list-unstyled"><a href="#projects" class="text-white  fw-light text-decoration-none "> PROJECTS</a></li>
+                                    
+                                    <li class="li list-unstyled"><a href="#contact" class="text-white  fw-light text-decoration-none me-3"> CONTACT</a></li>
+                                </ul>
+                        </nav>
                     </div>
-                    <div class="navSection d-flex justify-content-center align-items-center  ">
-                        <div class="listMirror mt-2 ">
-                            <nav class="nav-link ">
-                                    <ul class="navSectionNav d-flex justify-content-center gap-5  ">
-                                        <li class="li list-unstyled"><a href="#home" class=" text text-white fw-light text-decoration-none  "> HOME</a></li>
-                                        <li class="li list-unstyled"><a href="#about" class="text-white  fw-light text-decoration-none "> ABOUT ME </a></li>
-                                        <li class="li list-unstyled"><a href="#projects" class="text-white  fw-light text-decoration-none "> PROJECTS</a></li>
-                                        
-                                        <li class="li list-unstyled"><a href="#contact" class="text-white  fw-light text-decoration-none me-3"> CONTACT</a></li>
-                                    </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="logo logo2 w-25 " >
-                        <span class="text-center text-success fs-3 fw-bold d-flex  justify-content-center gap-5"> 
-                            <!-- light and dark mode  -->
-                             
-                            <button class="btn btn-outline-primary  rounded-pill m3-4" id="darkLight">
-                                <span class="bi bi-moon"></span>
-                            </button>
+                </div>
 
 
-                            <div><button class="btn  blog">Blog</button></div>
-                        </span>
-                    </div>
+                <div class="logo logo2 bg-success" >
+                    <span class="text-center text-success fs-3 fw-bold d-flex  justify-content-center gap-5"> 
+                        <!-- light and dark mode  -->
+                            
+                        <button class="btn btn-outline-primary  rounded-pill m3-4" id="darkLight">
+                            <span class="bi bi-moon"></span>
+                        </button>
+
+
+                        <div><button class="btn  blog">Blog</button></div>
+                    </span>
+                </div>
 
             </div>
         
-            </div>
-
-    <section id="index " class="home mt-4 " style="height: 100vh;">
+        </div>
+    
+    <section id="index" class=" home mt-4 ">
 
         <!-- Profile section -->
-        <div class="homeSection">
-             <div class=" HomeSectionOne  ">
-                <!-- The image used as my profile is in the styles section as my background image -->
-            </div>
+        <div class="homeSection bg-transparent">
+            <div class="homeProfile">
+                <div class="HomeSectionMain">
+                    <div class=" HomeSectionOne  ">
+                        <!-- Here is where the profile image space is   -->
+                        <!-- The image used as my profile is in the styles section as my background image -->
+                    </div>
 
-            <div class="  HomeSectionTwo  ">
-                <div class="sectionOne_text text-center" >
-                    <h5>Welcome to my site,</h5> 
-                    <h1>I'm Njoroge Victor,</h1> 
-                    <h1> <span id="xxxx"></span></h1>
+                    <div class=" HomeSectionTwo   ">
+                        <div class="sectionOne_text text-center" >
+                            <h5>Welcome to my site,</h5> 
+                            <h1>I'm Njoroge Victor,</h1> 
+                            <h1> <span class="text-dark" id="xxxx"></span></h1>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-
-            <div class="  HomeSectionFour mb-5">
-                <div>
-                    <p class="text-info  text-center">
+            
+                <div class="HomeSectionFour card shadow">
+                    <p class="text-center">
                         <i class="bi bi-chat-left-quote-fill fs-1"></i> <br>
 
-                        <i class="bi bi-quote fs-5"></i>
-                        <span>As a software developer I build websites , web apps,mobile apps, solve problems, and turn ideas into code. I’m passionate about creating digital experiences that make an impact, constantly learning, and pushing my skills to the next level.</span>
-                        </p>
-                </div >
+                        <i class="bi bi-quote fs-1 fw-bolder"></i>
+                        <span class="fs-5">As a full-stack software developer, I build websites , web apps,mobile apps, solve problems, and turn ideas into code. I’m passionate about creating digital experiences that make an impact, constantly learning, and pushing my skills to the next level.</span>
+                    </p>
+                </div>
             </div>
 
             <div class=" justify-content-start HomeSectionThree ">
-                <div class="marquee1 d-flex justify-content-between">
+                <div class="images1 d-flex justify-content-between">
                         <img src="images/p1.svg" width="" alt="python">
                         <img src="images/js.png" width="" alt="javascript">
                         <img src="images/h1.svg" width="" alt="html">
@@ -160,7 +143,7 @@
     
                 </div>
         
-                <div class="marquee1 d-flex justify-content-between">
+                <div class="images1 d-flex justify-content-between">
                         <img src="images/React.svg" width="" alt="python">
                         <img src="images/TailwindCSS.svg" width="" alt="html">
                         <img src="images/Vue.js.svg" width="" alt="python">
@@ -173,19 +156,34 @@
             
         </div>
     </section>
-    <section class="" style="height: 130vh;">
-        <div class="scroll-section" id="skills">
+
+    <section class="scroll-section skills" id="about">
+        <div>
+            <h1 class="text-center text-dark fw-bolder"> About me</h1>
+        </div>
+        <div class="about card shadow">
+            <h1 class="text-start text-dark fw-bolder"><i class="bi bi-mortarboard-fill fs-1 fw-bolder text-info"></i> Education</h1>
+            <p class="text-info"> 2025- Present </p>
+            <p class="fw-bold fs-4">Full Stack Software-Development</p>
+            <p class="fs-6"> <span class="fs-2 fw-bolder text-info">: </span> Institute Of Software Technologies</p>
+        </div>
+
+    </section>
+
+    <!-- Start of the skills/about section -->
+    <section class="scroll-section skills">
+        <div class=" text-black">
             <div>
-                <h1 class="text-center text-info">Developer skills</h1>
+                <h1 class="text-center text-dark fw-bolder"> Developer skills</h1>
             </div>
-            <div class=" text-white fade-in-on-scroll p-3 AboutSectionOne">
-                <h1>LANGUAGES</h1> 
-                <p style="color: rgb(214, 203, 203);">I work with various programming languages to develop effective solutions.Below are some of the technologies I frequently use.
+            <div class=" card shadow text-white fade-in-on-scroll p-3 AboutSectionOne">
+                <h1 class="text-start text-dark fw-bolder"><i class="bi bi-code-slash fs-1 fw-bolder text-info"></i> Languages</h1>
+                <p style="color: black;" class="fs-5">I work with various programming languages to develop effective solutions.Below are some of the technologies I frequently use.
                 </p>
 
                 <div class="language d-flex justify-content-between">
                     <div class="w-50 languageOne">
-                        <img src="images/js.png" width=""> <span class="fs-4 ps-2">javascript</span><span class="float-end text-info">80%</span>
+                        <img src="images/js.png" width=""> <span class="fs-4 ps-2">J.Script</span><span class="float-end text-info">80%</span>
                     </div>
                     <div class="w-50 languageOne">
                         <img src="images/python (1).png" width=""> <span class="fs-4 ps-2">python</span><span class="float-end text-info">80%</span>
@@ -217,9 +215,9 @@
             </div>
 
 
-            <div class="text-white fade-in-on-scroll p-3 AboutSectionTwo">
-                <h1>Technologies</h1> 
-                <p style="color: rgb(214, 203, 203);">I use various modern technologies to create effective solutions.Here are some of the main tools i work with
+            <div class=" card shadow  text-white fade-in-on-scroll p-3 AboutSectionTwo">
+                <h1 class="text-start text-dark fw-bolder"><i class="bi bi-code-slash fs-1 fw-bolder text-info"></i> Technologies</h1>
+                <p style="color: black" class="fs-5" >I use various modern technologies to create effective solutions.Here are some of the main tools i work with
                 </p>
                 <div class="language d-flex justify-content-between">
                     <div class="w-50 languageOne">
@@ -261,76 +259,54 @@
                         <img src="images/Visual Studio Code (VS Code).svg"  width="1%"><span class="fs-4 ps-4">VsCode</span><span class="float-end text-info">80%</span>
                     </div> 
                 </div>
-            
-            </div>
-        </section>
+        </div>
+    </section>
 
 
-
-
-  
-
-        <section id="projects" class="scroll-section bg-primary" style="height:120vh;">
-            <div class="fade-in-on-scroll  projectSection p-4">
-                <h1 class="text-info text-center">My Projects :</h1>
-                <!-- project One -->
-                <div style="background-color: black; margin-top: 2%; text-align: center; padding: 2% 0%; border-radius: 10px; border: 1px solid blue;box-shadow: 0px 0px 5px greenyellow ;">
-                    <p class="text-info fw-bolder px-3">Financial Transport Management System(FTMS)</p>
-                    <p class="text-center px-5 text-light">I'm currently working on :</p>
-                    <p class="text-center px-5 text-light"> A system designed to help <strong>bus and matatu owners/operators</strong> 
-                        manage their daily income, track expenses, and automatically reinvest profits 
-                        into structured financial tools
-                    </p>
-                    <button class="btn bg-transparent">
-                        <a href="https://victorr105.github.io/random_joke/"> View on Github</a>
-                    </button>
-                </div>
-                <!-- Project two -->
-                <div style="background-color: black; margin-top: 2%; text-align: center; padding: 2% 0%; border-radius: 10px; border: 1px solid blue;box-shadow: 0px 0px 5px greenyellow ;">
-                    <p class="text-info fw-bolder px-3">Financial Transport Management System(FTMS)</p>
-                    <p class="text-center px-5 text-light">I'm currently working on :</p>
-                    <p class="text-center px-5 text-light"> A system designed to help <strong>bus and matatu owners/operators</strong> 
-                        manage their daily income, track expenses, and automatically reinvest profits 
-                        into structured financial tools
-                    </p>
-                    <button class="btn bg-transparent">
-                        <a href="https://victorr105.github.io/random_joke/"> View on Github</a>
-                    </button>
-                </div>
-                <div style="background-color: black; margin-top: 2%; text-align: center; padding: 2% 0%; border-radius: 10px; border: 1px solid blue;box-shadow: 0px 0px 5px greenyellow ;">
-                    <p class="text-info fw-bolder px-3">Financial Transport Management System(FTMS)</p>
-                    <p class="text-center px-5 text-light">I'm currently working on :</p>
-                    <p class="text-center px-5 text-light"> A system designed to help <strong>bus and matatu owners/operators</strong> 
-                        manage their daily income, track expenses, and automatically reinvest profits 
-                        into structured financial tools
-                    </p>
-                    <button class="btn bg-transparent">
-                        <a href="https://victorr105.github.io/random_joke/"> View on Github</a>
-                    </button>
+    <!-- start of the projects section -->
+    <section class="projects" >
+        <div class=" card shadow  projectSection p-4">
+            <h1 class="text-center text-dark fw-bolder">My Projects :</h1>
+            <!-- project One -->
+            <div class="project1 card shadow " >
+                <p class="text-white fw-bolder fs-2 px-3">Financial Transport Management System(FTMS)</p>
+                <p class="text-center px-5 fs-3 text-dark">I'm currently working on :</p>
+                <p class="text-center fs-5 px-5 text-dark"> A system designed to help <strong>bus and matatu owners/operators</strong> 
+                    manage their daily income, track expenses, and automatically reinvest profits 
+                    into structured financial tools
+                </p>
+                <button class="btn bg-transparent">
+                    <a style="cursor: pointer;" href="https://victorr105.github.io/random_joke/"> View on Github</a>
+                </button>
+                <div>
+                    <p>You can also checkout my other projects on my github account using the button below</p>
+                    <a style="cursor: pointer;" href="https://github.com/Victorr105"><i class="bi bi-github fs-2 text-dark githubMoji "></i></a> 
+                    
                 </div>
             </div>
-        </section>
 
-        <!-- start of the contact section -->
-        <section id="contact"  class="scroll-section " style="height: 110vh;">
+        </div>
+        </section>
+         <section id="contact"  class="scroll-section " >
             
             <div class="fade-in-on-scroll   contactSection p-4">
-               <h1 class="text-center text-info"> CONTACT</h1>
+               <h1 class="text-center text-dark fw-bolder"> CONTACT</h1>
                <div>
-                <h1 class="text-center text-white">Want to reach out ?</h1>
-                <h6 class="text-center text-white px-5">Provide as many details as possible and expect a response within 24 hours</h6>
-                <div class=" text-white " >
-                    <i class="bi bi-envelope fs-1"></i> <span class="fs-5">njorovictorr@gmail.com </span>
+                <h1 class="text-center text-dark">Want to reach out ?</h1>
+                <h6 class="text-center text-dark px-5">Provide as many details as possible and expect a response within 24 hours</h6>
+                <div class="  " >
+                    <i class="bi bi-envelope fs-1"></i> <span class="fs-5 text-dark">njorovictorr@gmail.com </span>
                 </div>
-                <div class=" text-white " >
+                <div class=" text-dark x " >
                     <i class="bi bi-telephone fs-1"></i><span class="fs-5">  +254 769705439 </span>
                 </div>
             </div>
                <div class=" formSection">
-                <form action="" class="">
+                
+                <form action="" class="form">
                     <div class="pt-4">
                         <h2 style="color: rgb(172, 172, 172);" class="text-center">What can i help you with ?</h2>
-                        <div class="formButton d-flex justify-content-center">
+                        <div class="formButton d-flex gap-1 justify-content-center">
                             <div>
                                     <button >Web Design</button>
                             </div>
@@ -339,7 +315,7 @@
                                 </div>
                         </div>
 
-                        <div class="formButton d-flex justify-content-center">
+                        <div class="formButton d-flex gap-1 justify-content-center">
                             <div>
                                 <button>Collaboration</button>
                             </div>
@@ -351,31 +327,31 @@
                         
                     </div>
                     <div class="mt-5" >
-                        <label for=""><span class=" text-white" >First Name</span></label>
+                        <label for=""><span class=" ps-2 text-dark" >First Name</span></label>
                         <div>
                             <input type="text" placeholder="" class="">
                         </div>
                     </div>
                     <div>
-                        <label for=""> <span class=" text-white" >Last Name</span></label>
+                        <label for=""> <span class=" ps-2  text-dark" >Last Name</span></label>
                         <div>
                             <input type="text" placeholder="" class="">
                         </div>
                     </div>
                     <div>
-                        <label for=""><span class=" text-white" >Phone Number</span></label>
+                        <label for=""><span class=" ps-2  text-dark" >Phone Number</span></label>
                         <div>
                             <input type="text" placeholder="" class="">
                         </div>
                     </div>
                     <div>
-                        <label for=""><span class=" text-white" >Email</span></label>
+                        <label for=""><span class=" ps-2  text-dark" >Email</span></label>
                         <div>
                             <input type="text" placeholder="" class="">
                         </div>
                     </div>
                     <div>
-                        <label for=""><span class=" text-white" >Message</span></label>
+                        <label for=""><span class=" ps-2  text-dark" >Message</span></label>
                         <div>
                             <input type="textarea"  placeholder="Type your message here..."  rows="5" class=" textarea">
                         </div>
@@ -392,32 +368,30 @@
             </div>
         </section>
 
-        <section class="footerSection">
-            <div class="fade-in-on-scroll  scroll-section"   >
-                <footer class=" justify-content-center align-items-center">
-                    <div class=" footer d-flex  gap-3">
-                        <div> <a href="https://github.com/Victorr105"><i class="bi bi-github fs-2 text-white"></i></a></div>
-                        <div><a href="https://wa.me/message/CTVHBD6YULX6F1"><i class="bi bi-whatsapp fs-2 text-white"></i></a></div>
-                        <div><a href=""><i class="bi bi-instagram fs-2 text-white"></i></a></div>
-                        <div><a href=""><i class="bi bi-threads fs-2 text-white"></i></a></div>
-                        <div><a href=""><i class="bi bi-twitter-x fs-2 text-white"></i></a></div>
-                    </div>
-                    <div>
-                        <p class="text-white text-center align-bottom mt-5">© <span id="year"></span>njorogeVictor. All rights reserved.</p>
+        <section class="footer">
+            <footer class="card-footer p-5">
+                <ul class="  d-flex justify-content-center gap-4">
+                    <li class="list-unstyled"><a href="https://github.com/Victorr105"><i class="bi bi-github fs-2 text-white  "></i></a></li>
+                    <li class="list-unstyled"><a href="https://github.com/Victorr105"><i class="bi bi-linkedin fs-2 text-white "></i></a></li>
+                    <li class="list-unstyled"><a href="https://github.com/Victorr105"><i class="bi bi-instagram fs-2 text-white "></i></a></li>
+                    <li class="list-unstyled"><a href="https://github.com/Victorr105"><i class="bi bi-whatsapp fs-2 text-white "></i></a></li>
+                </ul>
 
-                    </div>
+                <p class="text-center text-secondary fw-bold">You can call me @ 075755772</p>
+                <p class="text-center text-secondary fw-bold">Victor Njoroge Devops</p>
+            </footer>
 
-                </footer>
-            </div>
             
-    
         </section>
-        
-    
-    
-    <script src="js/bootstrap.bundle.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 
 </body>
 </html>
+
+
+</body>
+
+  
