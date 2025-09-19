@@ -1,9 +1,11 @@
+nav {
+    position: sticky;
+    top: 0;
+}
 .nav-sm {
  width: 100vw;
  height: 4.5vh;
- background-color: transparent;
  min-width: 370px;
- position: absolute;
 
 }
 
@@ -20,7 +22,7 @@
 
 .darkmode-sm i {
     margin-left: 40%;
-    color: #c98355;
+    color:#fff;
     cursor: pointer;
     
 }
@@ -173,6 +175,15 @@ input:checked ~ .slide{
     .checkbox {
         display: none !important;
     }
+    .toogleParent {
+    position: fixed;
+    display: none !important;
+    }
+
+    .checkbox {
+        display: none !important;
+    }
+    
 }
 
 

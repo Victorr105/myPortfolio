@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- custom css links -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaQuerries.css">
     <link rel="stylesheet" href="css/stylesForNavbar.css">
-    <link rel="stylesheet" href="css/styles2.css">
     <link rel="stylesheet" href="css/stylesDarkmode.css">
     
 
@@ -51,338 +51,360 @@
                     <div class="slide">
                         <h1 class="text-center"> MENU</h1>
                         <ul>
-                            <li><a href="#" class="fs-4">home</a></li>
-                            <li><a href="#" class="fs-4">about</a></li>
+                            <li><a href="#home" class="fs-4">home</a></li>
+                            <li><a href="#about" class="fs-4">about</a></li>
                             <li><a href="#" class="fs-4">servises</a></li>
                             <li><a href="#" class="fs-4">delivery</a></li>
                         </ul>
                     </div>
                 </div>
             </label>
+
+
+<!-- for bigger screens header section -->
+            <header class=" container d-flex justify-content-center   mt-0 ">
+                <div class=" " style="width: 20% ;">
+                    <h1 class="logo " style="font-style: oblique;">Njoroge</h1>
+                </div>
+                
+                <div  class="  NavbarLgLinks list-unstyled d-flex justify-content-center gap-lg-5  gap-sm-3 gap-md-3" style="width: 70%; background-color: #fff; border-radius: 20px; line-height: 35px;">
+                    <li class="text-center fw-medium  fs-4"> <a href="#home">Home</a></li>
+                    <li class="text-center fw-medium  fs-4"> <a href="#about">About</a></li>
+                    <li class="text-center fw-medium  fs-4"><a href="#projects">Projects</a></li>
+                    <li class="text-center fw-medium  fs-4"> <a href="#skills">Skills</a></li>
+                    <li class="text-center fw-medium  fs-4"><a href="#contact">Contact</a></li>
+                </div>
+                
+                <div class=" p-0" style="width: 10%;">
+                    <button type="button" class="btn fs darkmodeSun float-end" id="darkLight1">
+                        <span class="bi bi-sun fs-2"></span>
+                    </button>
+                </div>
+            </header>
+            <!--  home section  -->
+            <section id="home">
+                    <div class="container-fluid  ">
+                        <div class="row">
+                            <!-- first split -->
+                            
+                            <div class=" firstSplitHome col-md-6 ">
+                                    <p class=" ">Welcome to my site</p>
+                                    <p class="display-4 myName fw-medium">Hi, I'm Victor Njoroge</p>
+                                    <div class="">
+                                        <span id="profileText" class="lead fs-2 fw-medium "></span>
+                                    </div>
+                                    <div>
+                                        <p class=" AboutMe  lead ">
+                                            A passionate developer with expertise in Next.js, React, Tailwind CSS, and blockchain technologies. Currently pursuing a Master's in Computer Science at Northeastern University.
+                                        </p>
+                                    </div>
+                                    <div class="my-5">
+                                            <button type="button" id="getIntouchbtn" class=" btnGetIntouch btn btn-light rounded-5 text-center">Get intouch <i class="  bi bi-arrow-down"></i></button>
+                                        
+                                        
+                                    </div>
+                                    <div class=" socialIcons d-flex justify-content-center list-unstyled float-start gap-md-4 gap-3" >
+                                        <li >  <a href="" onclick="event.preventDefault()"><i class="  bi bi-github fs-2"></i></a></li>
+                                        <li>  <a href="" onclick="event.preventDefault()"><i class="bi bi-linkedin fs-2"></i></a></li>
+                                        <li>  <a href="" onclick="event.preventDefault()"><i class="bi bi-envelope fs-2"></i></a></li>
+                                        <li>  <a href="" onclick="event.preventDefault()"><i class="bi bi-telephone fs-2"></i></a></li>
+                                    </div>
+
+                            </div>
+                            <!-- second split -->
+                             
+
+                             <div class=" profilefx col-md-6 text-center">
+                                <div class="Profile lead p-5 " >
+                                    <div class="ProfilePicture mx-auto " ></div>
+                                </div>
+                                
+                                 
+                                
+                            </div>
+
+                        </div>
+                    </div>
+            </section>
+
+            <!--about section   -->
+            <section id="about" class="about mb-5" style="margin-top: 11%; ">
+                <div class="container">
+                    <div class="row">
+                        <h1 class=" aboutText text-center text-md-start display-2 fw-bold">About me</h1>
+                    <div class=" text-center card shadow"></div>
+                    <div class="col-md-12" >
+                        <p class="text-center text-md-start lead px-3 py-2">
+                            I'm currently working as a Front-End Developer at OPTISANTIS, based in Grenoble, France. With over 6 years of professional experience, I specialize in turning ideas into reality through modern JS technologies such as Next.js, React.js, Node.js, Redux, and Angular 2+.
+                            I'm passionate about building clean, scalable, and maintainable applications. I place a strong focus on code readability and best practices, using tools like ESLint, Prettier, and StyleLint to ensure quality and consistency.
+                            Beyond writing code, I thrive on continuous improvement, striving every day to become a better developer than I was yesterday.
+                            Scroll down to explore some of the projects I've been working on.
+                        </p>
+                    </div>
+                </div>
+                </div>
+                
+            </section>
+            <!-- Projects section -->
+            <section class="projects px-5 mt-5 mb-5" id="projects">
+                
+                <div class="container">
+                    <div>
+                        <h1 class="  text-center text-md-start display-2 fw-bold">Projects</h1>
+                        <div class=" text-center card shadow"></div>
+                        
+                        <p>The most relevant projects I've worked on. My daily tasks include:</p> 
+                    </div>
+                    <div class="row  gap-5 p-md-5">
+                        <!-- first split -->
+                        <div class="ProjectsFirstSplit col-md-3 card shadow ms-md-5">
+                           <div style="width: 100%; 
+                           height: 13vh; background-color: blue; position:relative;">
+                           <div class="" style="width: 100px; height: 100px; border-radius: 50%; background-color: pink; position: absolute; left: 34%; top: 52%;"> 
+                           </div>
+                            </div>
+
+                           
+                           <div>
+                            
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore possimus veritatis numquam atque consequuntur reiciendis facilis soluta at dolor! Sequi dignissimos, repudiandae beatae dolorem veniam, accusamus odit animi assumenda saepe quisquam obcaecati ex iusto sapiente id facilis at facere totam? 
+                           </div>
+
+                        </div>
+                        <!-- second split -->
+                        <div class="col-md-3 card shadow">
+                           <div style="width: 100%;
+                           height: 13vh; background-color: blue; position:relative">
+                           <div class="" style="width: 100px; height: 100px; border-radius: 50%; background-color: pink; position: absolute; left: 34%; top: 52%;"> 
+                           </div>
+                            </div>
+
+                           
+                           <div>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore possimus veritatis numquam atque consequuntur reiciendis facilis soluta at dolor! Sequi dignissimos, repudiandae beatae dolorem veniam, accusamus odit animi assumenda saepe quisquam obcaecati ex iusto sapiente id facilis at facere totam? 
+                           </div>
+
+                        </div>
+
+                        <!-- third split -->
+                        <div class="col-md-3 card shadow ">
+                           <div style="width: 100%;
+                           height: 13vh; background-color: blue; position: relative;">
+                           <div class="" style="width: 100px; height: 100px; border-radius: 50%; background-color: pink; position: absolute; left: 34%; top: 52%;"> 
+                           </div>
+                            </div>
+
+                           
+                           <div>
+                            
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore possimus veritatis numquam atque consequuntur reiciendis facilis soluta at dolor! Sequi dignissimos, repudiandae beatae dolorem veniam, accusamus odit animi assumenda saepe quisquam obcaecati ex iusto sapiente id facilis at facere totam? 
+                           </div>
+
+                        </div>
+                       
+                    </div>
+                       
+                </div>
+                 <div class="container">
+                    <div class="row  gap-5 p-md-5">
+
+
+                        <!-- first split -->
+                        <div class="ProjectsFirstSplit  col-md-3 card shadow ms-md-5">
+                           <div style="width: 100%; 
+                           height: 13vh; background-color: blue; position:relative;">
+                           <div class="" style="width: 100px; height: 100px; border-radius: 50%; background-color: pink; position: absolute; left: 35%; top: 52%;"> 
+                           </div>
+                            </div>
+
+                           
+                           <div>
+                            
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore possimus veritatis numquam atque consequuntur reiciendis facilis soluta at dolor! Sequi dignissimos, repudiandae beatae dolorem veniam, accusamus odit animi assumenda saepe quisquam obcaecati ex iusto sapiente id facilis at facere totam? 
+                           </div>
+
+                        </div>
+                        <!-- second split -->
+                        <div class="col-md-3 card shadow">
+                           <div style="width: 100%;
+                           height: 13vh; background-color: blue; position:relative">
+                           <div class="" style="width: 100px; height: 100px; border-radius: 50%; background-color: pink; position: absolute; left: 34%; top: 52%;"> 
+                           </div>
+                            </div>
+
+                           
+                           <div>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore possimus veritatis numquam atque consequuntur reiciendis facilis soluta at dolor! Sequi dignissimos, repudiandae beatae dolorem veniam, accusamus odit animi assumenda saepe quisquam obcaecati ex iusto sapiente id facilis at facere totam? 
+                           </div>
+
+                        </div>
+
+                        <!-- third split -->
+                        <div class="col-md-3 card shadow ">
+                           <div style="width: 100%;
+                           height: 13vh; background-color: blue; position: relative;">
+                           <div class="" style="width: 100px; height: 100px; border-radius: 50%; background-color: pink; position: absolute; left: 34%; top: 52%;"> 
+                           </div>
+                            </div>
+
+                           
+                           <div>
+                            
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore possimus veritatis numquam atque consequuntur reiciendis facilis soluta at dolor! Sequi dignissimos, repudiandae beatae dolorem veniam, accusamus odit animi assumenda saepe quisquam obcaecati ex iusto sapiente id facilis at facere totam? 
+                           </div>
+
+                        </div>
+                       
+                    </div>
+                       
+                </div>
+             </section>
+
+             <section id="skills" class="skills mt-5 mb-5">
+                <div class="container">
+                    <div>
+                        <h1 class="  text-center text-md-start display-2 fw-bold">Skills</h1>
+                        <div class=" text-center card shadow"></div>
+                        
+                        <p>The most relevant projects I've worked on. My daily tasks include:</p> 
+                    </div>
+                    <div class="row gap-5">
+                        <!-- first split {for the front end} -->
+                        <div class="col-md-5 ">
+                            <h3 class="text-center ">FrontEnd</h3>
+                            <div class="ImagesContainer">
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/h1.svg" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/c.svg" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/js.png" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/React.svg" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/TailwindCSS.svg" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/Bootstrap.svg" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/Vue.js.svg" alt="" width="55px">
+                                </div>
+                                
+                             </div>
+                         </div>
+                         <div class="col-md-5 ">
+                            <h3 class="text-center ">Backend</h3>
+                            <div class="ImagesContainer ">
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/PHP.svg" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/next.svg" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/MySQL.svg" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/node.svg" alt="" width="55px">
+                                </div>
+                                <div class="divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/mongodb.svg" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493);width: 90px; display: flex ; " ><img class="mx-auto" src="images/p1.svg" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/Laravel.svg" alt="" width="55px">
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- first split {for the front end} -->
+                        <div class="col-md-12 p-5 ">
+                            <h3 class="text-center ">Tech & Tools</h3>
+                            <div class="ImagesContainer1  ">
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/git.svg" alt="" width="55px">
+                                </div>
+                                <div class="divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; "><img class="mx-auto" src="images/figma.svg" alt="" width="40px">
+                                </div>
+                                <div class="divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/Visual Studio Code (VS Code).svg" alt="" width="55px">
+                                </div>
+                                <div class="divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/github.svg" alt="" width="55px">
+                                </div>
+                                <div class="divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/Canva.svg" alt="" width="55px">
+                                </div>
+                                <div class="divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/git.svg" alt="" width="55px">
+                                </div>
+                                <div class=" divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/netlify.svg" alt="" width="55px">
+                                </div>
+                                <div class="divImages shadow p-2 rounded" style="border: 2px solid rgba(255, 255, 255, 0.493); width: 90px; display: flex ; " ><img class="mx-auto" src="images/Canva.svg" alt="" width="55px">
+                                </div>
+                                
+                             </div>
+                         </div>
+             </section>
+             <section class="contact mb-5 mt-5" id="contact">
+                <div class="container">
+                    <div>
+                        <h1 class="  text-center text-md-start display-2 fw-bold">Contact</h1>
+                        <div class=" text-center card shadow"></div>
+                        
+                        <p>The most relevant projects I've worked on. My daily tasks include:</p> 
+                    </div>
+                    <div class="row">
+                        <!-- first split -->
+                        <div class="col-md-6">
+                            <div class="form boxShadowNight rounded p-4" style="border: 1px solid antiquewhite; ">
+                                <div>
+                                    <label for="" class="form-label lead">Name :</label>
+                                    <input type="name" class="form-control"></input>
+                                </div>
+                                <div>
+                                    <label for="" class="form-label lead">Email :</label>
+                                    <input type="email" class="form-control"></input>
+                                </div>
+                                <div>
+                                    <label for="" class="form-label lead">Message :</label>
+                                    <textarea id="message" class="form-control" name="message" rows="4"  cols="50" placeholder="Type something..."></textarea>
+                                </div>
+                                <div class="mx-auto mt-3" style> 
+                                    <button type="submit" class="btn btn-primary w-75 ms-5">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- second split -->
+
+                        <div class="col-md-6 mt-5 mt-md-0">
+
+                            <div class="rounded boxShadowNight  mb-5" style="border: 1px solid antiquewhite; padding: 5%; ">
+
+                                <div><p><i class="bi bi-envelope fs-3"></i> njorogevictorr@gmail.com</p></div>
+                                <div><p> <i class="bi bi-phone fs-3"></i>+254769705439</p></div>
+                                <div><p><i class="bi bi-geo-alt fs-3"></i> Nairobi ,Kenya</p></div>
+
+                            </div>
+                            <div class=" rounded boxShadowNight p-4" style="border: 1px solid antiquewhite; ">
+                                <h1 class="text-center fw-bolder lead"> Follow me </h1>
+                                <div class="shadow card"></div>
+                                <div class="d-block text-center  ">
+                                    <div class="p-2"><a href="" class="text-decoration-none"><i class="bi bi-github fs-3"></i>  Github</a></div><div class="shadow card"></div>
+                                    <div class="p-2"><a href="" class="text-decoration-none"><i class="bi bi-linkedin fs-3"></i>  LinkedIn</a></div>
+                                    <div class="shadow card"></div>
+                                    <div class="pt-2"><a href="" class="text-decoration-none"><i class="bi bi-instagram fs-3"></i>  Instagram</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+             <footer class="mt-5 ">
+                <div class="shadow card "></div>
+                <div class="container-fluid " style="height: 5vh;">
+                    <p class="text-center mt-3">@VictorNjorogeDevs</p>
+                </div>
+             </footer>
+
+
         
   
         
-        <!-- navSecPtion for the bigger screens  -->
-        <div class="navSectionLg container-fluid  shadow ">
-            <div class="d-flex w-100">
 
-                <div class="logo bg-danger" >
-                    <div class="sectionOneA ">
-                        <p><span class="text fs-2 fw-bold" id="text"></span> </p> 
-                     </div>
-                </div>
-                <div class="navSection d-flex justify-content-center align-items-center bg-primary">
-                    <div class="listMirror  ">
-                        <nav class="nav-link ">
-                                <ul class="navSectionNav d-flex justify-content-center gap-sm-2 gap-md-3 gap-lg-4 gap-xl-5  ">
-                                    <li class="li list-unstyled"><a href="#home" class=" text text-white fw-light text-decoration-none  "> HOME</a></li>
-                                    <li class="li list-unstyled"><a href="#about" class="text-white  fw-light text-decoration-none "> ABOUT ME </a></li>
-                                    <li class="li list-unstyled"><a href="#projects" class="text-white  fw-light text-decoration-none "> PROJECTS</a></li>
-                                    
-                                    <li class="li list-unstyled"><a href="#contact" class="text-white  fw-light text-decoration-none me-3"> CONTACT</a></li>
-                                </ul>
-                        </nav>
-                    </div>
-                </div>
-
-
-                <div class="logo logo2 bg-success" >
-                    <span class="text-center text-success fs-3 fw-bold d-flex  justify-content-center gap-5"> 
-                        <!-- light and dark mode  -->
-                            
-                        <button class="btn btn-outline-primary  rounded-pill m3-4" id="darkLight">
-                            <span class="bi bi-moon"></span>
-                        </button>
-
-
-                        <div><button class="btn  blog">Blog</button></div>
-                    </span>
-                </div>
-
-            </div>
         
-        </div>
     
-    <section id="index" class=" home mt-4 ">
-
-        <!-- Profile section -->
-        <div class="homeSection bg-transparent">
-            <div class="homeProfile">
-                <div class="HomeSectionMain">
-                    <div class=" HomeSectionOne  ">
-                        <!-- Here is where the profile image space is   -->
-                        <!-- The image used as my profile is in the styles section as my background image -->
-                    </div>
-
-                    <div class=" HomeSectionTwo   ">
-                        <div class="sectionOne_text text-center" >
-                            <h5>Welcome to my site,</h5> 
-                            <h1>I'm Njoroge Victor,</h1> 
-                            <h1> <span class="text-dark" id="xxxx"></span></h1>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="HomeSectionFour card shadow">
-                    <p class="text-center">
-                        <i class="bi bi-chat-left-quote-fill fs-1"></i> <br>
-
-                        <i class="bi bi-quote fs-1 fw-bolder"></i>
-                        <span class="fs-5">As a full-stack software developer, I build websites , web apps,mobile apps, solve problems, and turn ideas into code. I’m passionate about creating digital experiences that make an impact, constantly learning, and pushing my skills to the next level.</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class=" justify-content-start HomeSectionThree ">
-                <div class="images1 d-flex justify-content-between">
-                        <img src="images/p1.svg" width="" alt="python">
-                        <img src="images/js.png" width="" alt="javascript">
-                        <img src="images/h1.svg" width="" alt="html">
-                        <img src="images/MySQL.svg" width="" alt="mysql">
-                        <img src="images/c.svg" width="" alt="css"> 
-    
-                </div>
-        
-                <div class="images1 d-flex justify-content-between">
-                        <img src="images/React.svg" width="" alt="python">
-                        <img src="images/TailwindCSS.svg" width="" alt="html">
-                        <img src="images/Vue.js.svg" width="" alt="python">
-                        <img src="images/Vite.js.svg" width="" alt="html">
-                        <img src="images/Bootstrap.svg" width="" alt="html">
-                
-                </div>
-
-            </div>
-            
-        </div>
-    </section>
-
-    <section class="scroll-section skills" id="about">
-        <div>
-            <h1 class="text-center text-dark fw-bolder"> About me</h1>
-        </div>
-        <div class="about card shadow">
-            <h1 class="text-start text-dark fw-bolder"><i class="bi bi-mortarboard-fill fs-1 fw-bolder text-info"></i> Education</h1>
-            <p class="text-info"> 2025- Present </p>
-            <p class="fw-bold fs-4">Full Stack Software-Development</p>
-            <p class="fs-6"> <span class="fs-2 fw-bolder text-info">: </span> Institute Of Software Technologies</p>
-        </div>
-
-    </section>
-
-    <!-- Start of the skills/about section -->
-    <section class="scroll-section skills">
-        <div class=" text-black">
-            <div>
-                <h1 class="text-center text-dark fw-bolder"> Developer skills</h1>
-            </div>
-            <div class=" card shadow text-white fade-in-on-scroll p-3 AboutSectionOne">
-                <h1 class="text-start text-dark fw-bolder"><i class="bi bi-code-slash fs-1 fw-bolder text-info"></i> Languages</h1>
-                <p style="color: black;" class="fs-5">I work with various programming languages to develop effective solutions.Below are some of the technologies I frequently use.
-                </p>
-
-                <div class="language d-flex justify-content-between">
-                    <div class="w-50 languageOne">
-                        <img src="images/js.png" width=""> <span class="fs-4 ps-2">J.Script</span><span class="float-end text-info">80%</span>
-                    </div>
-                    <div class="w-50 languageOne">
-                        <img src="images/python (1).png" width=""> <span class="fs-4 ps-2">python</span><span class="float-end text-info">80%</span>
-                    </div>
-                </div>
-                <div class="language d-flex justify-content-between">
-                    <div class="w-50 languageOne">
-                        <img src="images/MySQL.svg" width=""><span class="fs-4 ps-2">MySQL</span><span class="float-end text-info">80%</span>
-                        
-                    </div>
-                    <div class="w-50 languageOne">
-                        <img src="images/PHP.svg" width=""> <span class="fs-4 ps-2">php</span><span class="float-end text-info">80%</span>
-                    </div>
-                </div>
-                <div class="language d-flex justify-content-between">
-                    <div class="w-50 languageOne">
-                        <img src="images/h1.svg" width=""><span class="fs-4 ps-2">Html</span><span class="float-end text-info">80%</span>
-                        
-                    </div>
-                    <div class="w-50 languageOne">
-                        <img src="images/c.svg" width=""> <span class="fs-4 ps-2">Css</span><span class="float-end text-info">80%</span>
-                    </div>
-                </div>
-                <div class="language d-flex justify-content-between align-content-center">
-                    <div class="w-100 languageOne languageTwo language">
-                        <img src="images/git.svg"  width="1%"><span class="fs-4 ps-4">Git</span><span class="float-end text-info">80%</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class=" card shadow  text-white fade-in-on-scroll p-3 AboutSectionTwo">
-                <h1 class="text-start text-dark fw-bolder"><i class="bi bi-code-slash fs-1 fw-bolder text-info"></i> Technologies</h1>
-                <p style="color: black" class="fs-5" >I use various modern technologies to create effective solutions.Here are some of the main tools i work with
-                </p>
-                <div class="language d-flex justify-content-between">
-                    <div class="w-50 languageOne">
-                        <img src="images/next.svg" width=""> <span class="fs-4 ps-2">NojeJs</span><span class="float-end text-info">80%</span>
-                    </div>
-                    <div class="w-50 languageOne">
-                        <img src="images/TailwindCSS.svg" width=""> <span class="fs-4 ps-2">Tailwind</span><span class="float-end text-info">80%</span>
-                    </div>
-                </div>
-                <div class="language d-flex justify-content-between">
-                    <div class="w-50 languageOne">
-                        <img src="images/Laravel.svg" width=""><span class="fs-4 ps-2">Laravel</span><span class="float-end text-info">80%</span>
-                        
-                    </div>
-                    <div class="w-50 languageOne">
-                        <img src="images/Bootstrap.svg" width=""> <span class="fs-4 ps-2">Bootstrap</span><span class="float-end text-info">80%</span>
-                    </div>
-                </div>
-                <div class="language d-flex justify-content-between">
-                    <div class="w-50 languageOne">
-                        <img src="images/Canva.svg" width=""><span class="fs-4 ps-2">Canva</span><span class="float-end text-info">80%</span>
-                        
-                    </div>
-                    <div class="w-50 languageOne">
-                        <img src="images/React.svg" width=""> <span class="fs-4 ps-2">ReactJs</span><span class="float-end text-info">80%</span>
-                    </div>
-                </div>
-                <div class="language d-flex justify-content-between">
-                    <div class="w-50 languageOne">
-                        <img src="images/Vue.js.svg" width=""><span class="fs-4 ps-2">VueJs</span><span class="float-end text-info">80%</span>
-                        
-                    </div>
-                    <div class="w-50 languageOne">
-                        <img src="images/Vite.js.svg" width=""> <span class="fs-4 ps-2">Vitejs</span><span class="float-end text-info">80%</span>
-                    </div>
-                </div>
-                <div class="language d-flex justify-content-between align-content-center">
-                    <div class="w-100 languageOne languageTwo">
-                        <img src="images/Visual Studio Code (VS Code).svg"  width="1%"><span class="fs-4 ps-4">VsCode</span><span class="float-end text-info">80%</span>
-                    </div> 
-                </div>
-        </div>
-    </section>
-
-
-    <!-- start of the projects section -->
-    <section class="projects" >
-        <div class=" card shadow  projectSection p-4">
-            <h1 class="text-center text-dark fw-bolder">My Projects :</h1>
-            <!-- project One -->
-            <div class="project1 card shadow " >
-                <p class="text-white fw-bolder fs-2 px-3">Financial Transport Management System(FTMS)</p>
-                <p class="text-center px-5 fs-3 text-dark">I'm currently working on :</p>
-                <p class="text-center fs-5 px-5 text-dark"> A system designed to help <strong>bus and matatu owners/operators</strong> 
-                    manage their daily income, track expenses, and automatically reinvest profits 
-                    into structured financial tools
-                </p>
-                <button class="btn bg-transparent">
-                    <a style="cursor: pointer;" href="https://victorr105.github.io/random_joke/"> View on Github</a>
-                </button>
-                <div>
-                    <p>You can also checkout my other projects on my github account using the button below</p>
-                    <a style="cursor: pointer;" href="https://github.com/Victorr105"><i class="bi bi-github fs-2 text-dark githubMoji "></i></a> 
-                    
-                </div>
-            </div>
-
-        </div>
-        </section>
-         <section id="contact"  class="scroll-section " >
-            
-            <div class="fade-in-on-scroll   contactSection p-4">
-               <h1 class="text-center text-dark fw-bolder"> CONTACT</h1>
-               <div>
-                <h1 class="text-center text-dark">Want to reach out ?</h1>
-                <h6 class="text-center text-dark px-5">Provide as many details as possible and expect a response within 24 hours</h6>
-                <div class="  " >
-                    <i class="bi bi-envelope fs-1"></i> <span class="fs-5 text-dark">njorovictorr@gmail.com </span>
-                </div>
-                <div class=" text-dark x " >
-                    <i class="bi bi-telephone fs-1"></i><span class="fs-5">  +254 769705439 </span>
-                </div>
-            </div>
-               <div class=" formSection">
-                
-                <form action="" class="form">
-                    <div class="pt-4">
-                        <h2 style="color: rgb(172, 172, 172);" class="text-center">What can i help you with ?</h2>
-                        <div class="formButton d-flex gap-1 justify-content-center">
-                            <div>
-                                    <button >Web Design</button>
-                            </div>
-                                <div>
-                                    <button >Web Development</button>
-                                </div>
-                        </div>
-
-                        <div class="formButton d-flex gap-1 justify-content-center">
-                            <div>
-                                <button>Collaboration</button>
-                            </div>
-                            <div>
-                                <button>Other</button>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                    <div class="mt-5" >
-                        <label for=""><span class=" ps-2 text-dark" >First Name</span></label>
-                        <div>
-                            <input type="text" placeholder="" class="">
-                        </div>
-                    </div>
-                    <div>
-                        <label for=""> <span class=" ps-2  text-dark" >Last Name</span></label>
-                        <div>
-                            <input type="text" placeholder="" class="">
-                        </div>
-                    </div>
-                    <div>
-                        <label for=""><span class=" ps-2  text-dark" >Phone Number</span></label>
-                        <div>
-                            <input type="text" placeholder="" class="">
-                        </div>
-                    </div>
-                    <div>
-                        <label for=""><span class=" ps-2  text-dark" >Email</span></label>
-                        <div>
-                            <input type="text" placeholder="" class="">
-                        </div>
-                    </div>
-                    <div>
-                        <label for=""><span class=" ps-2  text-dark" >Message</span></label>
-                        <div>
-                            <input type="textarea"  placeholder="Type your message here..."  rows="5" class=" textarea">
-                        </div>
-                    </div>
-                    <div class="mt-4 ms-5"   id="submitBtn">
-                        <button
-                            type="submit" class="btn btn-primary">Submit
-                        </button>
-
-                    </div>
-                    
-                </form>
-               </div>
-            </div>
-        </section>
-
-        <section class="footer">
-            <footer class="card-footer p-5">
-                <ul class="  d-flex justify-content-center gap-4">
-                    <li class="list-unstyled"><a href="https://github.com/Victorr105"><i class="bi bi-github fs-2 text-white  "></i></a></li>
-                    <li class="list-unstyled"><a href="https://github.com/Victorr105"><i class="bi bi-linkedin fs-2 text-white "></i></a></li>
-                    <li class="list-unstyled"><a href="https://github.com/Victorr105"><i class="bi bi-instagram fs-2 text-white "></i></a></li>
-                    <li class="list-unstyled"><a href="https://github.com/Victorr105"><i class="bi bi-whatsapp fs-2 text-white "></i></a></li>
-                </ul>
-
-                <p class="text-center text-secondary fw-bold">You can call me @ 075755772</p>
-                <p class="text-center text-secondary fw-bold">Victor Njoroge Devops</p>
-            </footer>
-
-            
-        </section>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="js/bootstrap.bundle.min.js"></script>

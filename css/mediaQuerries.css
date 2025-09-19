@@ -1,0 +1,122 @@
+@media screen and (max-width:576px){
+    header {
+        display: none;
+        opacity: 0;
+        z-index: -100;
+    }
+    header div h1 {
+        display: none;
+    }
+
+    header ul li {
+        display: none ;
+    }
+
+    header div span {
+        display: none;
+    }
+    .myName {
+        font-size:1.5rem ;
+    }
+
+    
+
+
+
+
+}
+
+
+
+
+@media screen and (min-width:576px){
+    header {
+        z-index: 1000;
+    }
+    .firstSplitHome {
+        padding-left: 10%;
+    }
+
+
+
+    .myName {
+        font-size:2.2rem ;
+    }
+    
+
+    .AboutMe {
+        font-size: 1.3rem;
+    }
+    .firstSplitHome {
+        padding-top:6% ;
+        animation: slideTop 1.5s ease forwards;
+    }
+
+    .profilefx {
+        padding-top:4% ;
+       animation: slideBottom 1.5s ease forwards; 
+    }
+
+    .ProfilePicture {
+    border: 2px solid white ;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background-image: url(../images/p3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0%;
+    box-shadow: 0 0 10px 5px #ffffff, 0 0 5px #686720, 0 0 20px #7e7c06;
+    animation: float 3s ease-in-out infinite;
+    }
+
+    .aboutText {
+        animation: slideBottom 1.5s ease forwards; 
+    }
+
+}
+
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 5;
+    }
+
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 5;
+    }
+
+}
+
+
+@media screen and (min-width:768px){
+    
+
+    .myName {
+        font-size:3.2rem ;
+    }
+}
+
+@media screen and (min-width:992px){
+    
+
+    .myName {
+        font-size:3.2rem ;
+    }
+}
