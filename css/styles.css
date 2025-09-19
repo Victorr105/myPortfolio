@@ -60,6 +60,10 @@ header  li a:hover {
   color: #fff;
 }
 
+.homeBtn:hover {
+  scale: 1.2;
+  box-shadow: 0px 0px 3px 1px antiquewhite;
+}
 .about {
   background-color:black;
 }
@@ -93,6 +97,62 @@ header  li a:hover {
   background-color: rgba(250, 235, 215, 0.212);
 }
 
+.divImages:hover {
+  scale: 1.3;
+  box-shadow: 0 0 10px 5px #f1f1f1, 0 0 5px #ffffff, 0 0 20px #f8f8f8;
+}
+
+/* contact section */
+.MyInfo {
+  border: 1px solid gray ;
+  cursor: pointer;
+}
+
+.MyInfo:hover {
+  border: 1px solid white ;
+  color: white;
+  background-color: black;
+  transition: .3s ease-in-out;
+  
+}
+
+/* projects section  */
+.projectbackgroundImage {
+   background-image: url(../images/weather.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.projectbackgroundImage1 {
+   background-image: url(../images/k2.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.projectbackgroundImage2 {
+   background-image: url(../images/k2.jpeg );
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.projectbackgroundImage3 {
+   background-image: url(../images/netflix.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.projectbackgroundImage4 {
+   background-image: url(../images/spotify.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.projectbackgroundImage5 {
+   background-image: url(../images/k2.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
 @keyframes slideLeft {
     0% {
         transform: translateX(-200px);

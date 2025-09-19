@@ -6,10 +6,10 @@ darkLight.addEventListener(`click` ,()=>{
     document.body.classList.toggle(`darkmode`)
 
     if(document.body.classList.contains(`darkmode`)){
-        darkLight.innerHTML = `<i class="bi bi-sun"></i>`
+        darkLight.innerHTML = `<i class="bi bi-moon fs-3"></i>`
         
     }else{
-        darkLight.innerHTML= `<i class="bi bi-moon"></i> `
+        darkLight.innerHTML= `<i class="bi bi-sun fs-3 text-white"></i> `
     }
 })
 
@@ -22,10 +22,10 @@ darkLight1.addEventListener(`click` ,()=>{
     document.body.classList.toggle(`darkmode`)
 
     if(document.body.classList.contains(`darkmode`)){
-        darkLight.innerHTML = `<i class="bi bi-moon"></i> `
+        darkLight.innerHTML = `<i class="bi bi-sun fs-3"></i> `
         
     }else{
-        darkLight.innerHTML= `<i class="bi bi-moon"></i> `
+        darkLight.innerHTML= `<i class="bi bi-moon fs-3"></i> `
     }
 })
 

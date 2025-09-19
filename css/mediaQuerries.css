@@ -19,7 +19,9 @@
         font-size:1.5rem ;
     }
 
-    
+    .ProjectProfile {
+        left: 33%;
+    }
 
 
 
@@ -74,9 +76,42 @@
     .aboutText {
         animation: slideBottom 1.5s ease forwards; 
     }
+    .MyInfo:hover {
+        border: 1px solid white ;
+        font-size: 1.3rem;
+        color: white;
+        background-color: black;
+        transition: .3s ease-in-out;
+  
+    }
+    .ProjectProfile {
+        left: 35%;
+    }
 
 }
 
+@media screen and (min-width:600px){
+    
+    .ProjectProfile {
+        left: 38%;
+    }
+
+}
+
+@media screen and (min-width:760px){
+    
+    .ProjectProfile {
+        left: 39%;
+    }
+
+}
+@media screen and (min-width:800px){
+    
+    .ProjectProfile {
+        left: 34%;
+    }
+
+}
 
 @keyframes slideTop {
     0% {
