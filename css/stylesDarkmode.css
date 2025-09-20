@@ -78,8 +78,9 @@ body.darkmode .homeBtn:hover {
 
 
 
-/* body.darkmode  {
-} */
+body.darkmode .MyInfo a{
+    color: black;
+}
 /* body.darkmode  {
 } */
 .cardBody {

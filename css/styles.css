@@ -155,6 +155,10 @@ header  li a:hover {
    background-size: cover;
    background-repeat: no-repeat;
 }
+
+.MyInfo a{
+    color: antiquewhite;
+}
 @keyframes slideLeft {
     0% {
         transform: translateX(-200px);
