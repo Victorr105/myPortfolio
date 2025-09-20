@@ -46,3 +46,21 @@ document.getElementById("contact").scrollIntoView({
 behavior: "smooth" // smooth scroll
 });
 });
+
+
+// for the submit after text
+
+const  simpleForm =document.getElementById(`simpleForm`)
+const  nameInputInput=document.getElementById(`nameInput`)
+const  formMessage=document.getElementById(`formMessage`)
+
+
+simpleForm.addEventListener("submit",(e)=>{
+    e.preventDefault()
+
+    //bind message with the users email address
+     formMessage.textContent=`Thankyou ${nameInput.value} for your message `
+// clear email input 
+ 
+ simpleForm.reset();
+})
