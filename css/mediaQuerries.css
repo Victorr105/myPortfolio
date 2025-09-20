@@ -12,9 +12,11 @@
         display: none ;
     }
 
-    header div span {
+    header div i {
         display: none;
     }
+
+    header
     .myName {
         font-size:1.5rem ;
     }

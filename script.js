@@ -22,7 +22,7 @@ darkLight1.addEventListener(`click` ,()=>{
     document.body.classList.toggle(`darkmode`)
 
     if(document.body.classList.contains(`darkmode`)){
-        darkLight.innerHTML = `<i class="bi bi-sun fs-3"></i> `
+        darkLight.innerHTML = `<i class="bi bi-sun text-white fs-3"></i> `
         
     }else{
         darkLight.innerHTML= `<i class="bi bi-moon fs-3"></i> `
