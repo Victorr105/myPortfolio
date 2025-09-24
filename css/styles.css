@@ -186,7 +186,7 @@ header  li a:hover {
 }
 
 .MyInfo:hover a {
-  color: rgb(218, 85, 85);
+  color: antiquewhite;
   background-color: black;
   transition: .3s ease-in-out;
   
