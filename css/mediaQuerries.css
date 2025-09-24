@@ -25,9 +25,6 @@
         left: 33%;
     }
 
-
-
-
 }
 
 
@@ -63,10 +60,10 @@
 
     .ProfilePicture {
     border: 2px solid white ;
-    width: 380px;
-    height: 380px;
+    width: 420px;
+    height: 420px;
     border-radius: 50%;
-    background-image: url(../images/p3.jpeg);
+    background-image: url(../images/pp6.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,12 +87,18 @@
         left: 35%;
     }
 
+    .projectHover {
+        min-width: 40%;
+    }
+
 }
 
 @media screen and (min-width:600px){
     
     .ProjectProfile {
         left: 38%;
+    }.projectHover {
+        min-width: 0%;
     }
 
 }
@@ -115,6 +118,8 @@
 
 }
 
+
+/* slide top */
 @keyframes slideTop {
     0% {
         transform: translateY(-200px);
@@ -128,6 +133,7 @@
 
 }
 
+/* slide bottom */
 @keyframes slideBottom {
     0% {
         transform: translateY(200px);

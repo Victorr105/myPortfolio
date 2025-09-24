@@ -10,7 +10,12 @@
 }
 
 
-/* what i will bw editing later */
+.boxShadowNight1 {
+  box-shadow: 1px 2px 10px 1px #fff;
+  background-color:rgba(250, 235, 215, 0.13);
+}
+
+            /* header */
 header {
   padding: 10px 0% !important;
   position: sticky;
@@ -38,16 +43,21 @@ header  li a:hover {
   animation: slideLeft 1.5s ease forwards; 
 }
 
+.darkmodebtn {
+  color: white;
+}
+
+                        /* Home */
+
 
 /* Home section */
-/* Profile picture */
 
  .ProfilePicture {
     border: 2px solid white ;
     width: 310px;
     height: 310px;
     border-radius: 50%;
-    background-image: url(../images/p3.jpeg);
+    background-image: url(../images/pp6.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,11 +66,11 @@ header  li a:hover {
     animation: float 3s ease-in-out infinite;
     }
 
-
 /* icons */
 .socialIcons i{
   color: #fff;
 }
+
 
 .homeBtn:hover {
   scale: 1.2;
@@ -75,6 +85,8 @@ header  li a:hover {
   box-shadow: 0px 0px 6px 1px antiquewhite;
   cursor: pointer;
 }
+
+
 
 /* Skills section */
 .ImagesContainer {
@@ -104,21 +116,14 @@ header  li a:hover {
   box-shadow: 0 0 10px 5px #f1f1f1, 0 0 5px #ffffff, 0 0 20px #f8f8f8;
 }
 
-/* contact section */
-.MyInfo {
-  border: 1px solid gray ;
-  cursor: pointer;
-}
 
-.MyInfo:hover {
-  border: 1px solid white ;
-  color: white;
-  background-color: black;
-  transition: .3s ease-in-out;
-  
-}
 
 /* projects section  */
+
+.btnProjectsContribute :hover {
+    scale: 1.1 ;
+    transition: ease .5s;
+}
 .projectbackgroundImage {
    background-image: url(../images/weather.jpeg);
    background-position: center;
@@ -126,13 +131,13 @@ header  li a:hover {
    background-repeat: no-repeat;
 }
 .projectbackgroundImage1 {
-   background-image: url(../images/k2.jpeg);
+   background-image: url(../images/meme.jpeg);
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
 }
 .projectbackgroundImage2 {
-   background-image: url(../images/k2.jpeg );
+   background-image: url(../images/mpesa2.jpg );
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -150,15 +155,48 @@ header  li a:hover {
    background-repeat: no-repeat;
 }
 .projectbackgroundImage5 {
-   background-image: url(../images/k2.jpeg);
+   background-image: url(../images/school.jpeg);
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
 }
 
+.projectHover {
+  background-color: rgba(255, 255, 255, 0.884);
+}
+
+.projectHover:hover {
+  scale: 1.1;
+  transition: 0.1s ;
+  cursor: pointer;
+}
+
+/* contact section */
+.MyInfo {
+  border: 1px solid gray ;
+  cursor: pointer;
+}
+
+.MyInfo:hover  {
+  border: 1px solid white ;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  transition: .3s ease-in-out;
+  
+}
+
+.MyInfo:hover a {
+  color: rgb(218, 85, 85);
+  background-color: black;
+  transition: .3s ease-in-out;
+  
+}
+
 .MyInfo a{
     color: antiquewhite;
 }
+
+/* key frames */
 @keyframes slideLeft {
     0% {
         transform: translateX(-200px);
@@ -174,46 +212,7 @@ header  li a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* key frames */
+/* key frame for the profile picture  */
 @keyframes float {
   0% {
     transform: translateY(0px);
